@@ -254,4 +254,65 @@ html {
   font-weight: 600;
 }
 
+.feature {
+  background-color: #eeeeee;
+  padding: 10.6875rem 0rem 14.1875rem;
+  font-size: 0rem;
+}
+
+.feature__container > div {
+  display: inline-block;
+  width: 17.8125rem;
+  text-align: center;
+  font-family: 'latolight';
+  line-height: 1.875rem;
+  color: #676767;
+}
+
+.feature__container > div h2 {
+  font-size: 1.5rem;
+}
+
+.feature__container > div p {
+  font-size: 1rem;
+}
+
+.feature_logo {
+  width: 10.75rem;
+  height: 11.625rem;
+  margin: 0 auto;
+}
+
+.feature__build__logo {
+  background: url(../img/heart_logo.png) no-repeat;
+}
+
+.feature__modern__logo {
+  background: url(../img/modern_logo.png) no-repeat;
+}
+
+.feature__use__logo {
+  background: url(../img/use_logo.png) no-repeat;
+}
+
+.feature__responsive__logo {
+  background: url(../img/responsive_logo.png) no-repeat;
+}
+
+.feature__build:hover .feature__build__logo {
+  background: url(../img/heart_logo_hover.png) no-repeat;
+}
+
+.feature__modern:hover .feature__modern__logo {
+  background: url(../img/modern_logo_hover.png) no-repeat;
+}
+
+.feature__use:hover .feature__use__logo {
+  background: url(../img/use_logo_hover.png) no-repeat;
+}
+
+.feature__responsive:hover .feature__responsive__logo {
+  background: url(../img/responsive_logo_hover.png) no-repeat;
+}
+
 /*# sourceMappingURL=main.css.map */
