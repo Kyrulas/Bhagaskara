@@ -12,7 +12,7 @@ html{
 	@include background-size(cover);
 }
 .container {
-    width: rem(1170px);
+    width: rem(1140px);
     margin:0 auto;
     box-sizing:border-box;
 }
@@ -51,7 +51,6 @@ html{
 	background: url("../img/border_white.png") no-repeat;
     width: rem(170px);
     height: rem(185px);
-    margin:0 rem(10px); 
     cursor:pointer; 
     @include background-size(cover);
 
@@ -67,6 +66,7 @@ html{
     margin-top:rem(42px);
     z-index: 2;
     }
+ 
 //SERVICES LOGO
     .elem-top__left-logo__img{
     	background: url(../img/services_icon.png) no-repeat 0px 0px; 
@@ -98,9 +98,16 @@ html{
      	text-align: center;
 		color: rgb(255, 255, 255);
 		z-index: 2;
+		font-weight: bold;
      }
 
 }
+  .header__block-left__about,.elem-top-left{
+    	margin-right: rem(29px);
+    }
+    .header__block-right__contact{
+		margin-left: rem(29px);
+    }
 
 .header__elem-bottom{
 	width: 100%;
