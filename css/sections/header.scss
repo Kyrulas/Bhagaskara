@@ -1,0 +1,148 @@
+html{
+	width: 100%;
+	height:100%;
+	font-size: 16px;
+}
+
+
+.header{
+	display: block;
+	background: url("../img/background.jpg")no-repeat ;
+	height: rem(1128px);
+	@include background-size(cover);
+}
+.container {
+    width: rem(1170px);
+    margin:0 auto;
+    box-sizing:border-box;
+}
+
+.header__top{
+	text-align:center;
+	padding-top:rem(121px);
+}
+.header__text{
+	margin-top:rem(80px);
+	text-align:center;
+	font-family:"latohairline";
+	color: rgb(255, 255, 255);
+	font-weight: 300;
+	h2{
+	font-size:rem(48px);
+  	line-height: 0.5;
+	}
+
+	p{
+	font-size:rem(24px);
+		small{
+			display: block;
+		}
+	}
+}
+
+.header__elem-top{
+	text-align: center;
+    margin: 0 auto;
+    margin-top:rem(112px);
+}
+.heptagon{
+	display: inline-block;
+	position: relative;
+	background: url("../img/border_white.png") no-repeat;
+    width: rem(170px);
+    height: rem(185px);
+    margin:0 rem(10px); 
+    cursor:pointer; 
+    @include background-size(cover);
+
+    &:hover{
+     	background: url("../img/purple_bg.png") no-repeat;
+     }
+
+    .logo{
+    width: rem(67px);
+    height: rem(70px);
+    display: inline-block;
+    text-align: center;
+    margin-top:rem(42px);
+    z-index: 2;
+    }
+//SERVICES LOGO
+    .elem-top__left-logo__img{
+    	background: url(../img/services_icon.png) no-repeat 0px 0px; 
+    }  
+//PORTFOLIO LOGO
+	.elem-top__right-logo__img{
+		background: url(../img/portfolio_icon.png) no-repeat 0px 0px; 
+	}
+//ABOUT LOGO
+	.block-left__about-logo__img{
+		background: url(../img/about_icon.png) no-repeat 0px 0px; 
+	}
+//TEAM LOGO
+	.block-left__team-logo__img{
+		background: url(../img/team_icon.png) no-repeat 0px 0px; 
+	}
+//BLOG LOGO
+	.block-right__blog-logo__img{
+		background: url(../img/blog_icon.png) no-repeat 0px 0px; 
+	}
+//CONTACT LOGO
+	.block-right__contact-logo__img{
+		background: url(../img/contact_icon.png) no-repeat 0px 0px; 
+	}
+     label{
+     	display: block;
+     	font-family: 'latoregular';
+     	font-size: rem(18px);
+     	text-align: center;
+		color: rgb(255, 255, 255);
+		z-index: 2;
+     }
+
+}
+
+.header__elem-bottom{
+	width: 100%;
+	margin-top:rem(30px);
+	@extend %clearfix;
+		.header__block-left{
+			float: left;
+			width: 50%;
+		}
+		.header_block-right{
+			float:right;
+			width: 50%;
+			text-align: right;
+		}
+}
+.elem-top__left-logo__img, .elem-top__right-logo__img{
+	margin-left:rem(15px);
+}
+
+.block-right__contact-logo__img, .block-right__blog-logo__img{
+	margin-right: rem(50px);
+}
+.block-left__team-logo__img, .block-left__about-logo__img{
+	margin-left:rem(55px);
+}
+//ARROW DOWN
+.header__arrow-elem{
+	text-align: center;
+
+	a{
+	display:block;
+	margin: 0 auto;
+	margin-bottom: rem(30px);
+	width: rem(120px);
+    height: rem(120px);
+	background: url(../img/arrow_down.png) no-repeat 0px 0px; 
+
+	&:hover{
+		background: url(../img/arrow_down_hover.png) no-repeat 0px 0px; 
+		}
+	}
+}
+
+
+

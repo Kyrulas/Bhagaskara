@@ -1,0 +1,154 @@
+html {
+  width: 100%;
+  height: 100%;
+  font-size: 16px;
+}
+
+.header {
+  display: block;
+  background: url("../img/background.jpg") no-repeat;
+  width: rem(2000px);
+  height: rem(1128px);
+  background-size: cover;
+}
+
+.container {
+  width: rem(1170px);
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.header__top {
+  text-align: center;
+  padding-top: rem(121px);
+}
+
+.header__text {
+  margin-top: rem(80px);
+  text-align: center;
+  font-family: "latohairline";
+  color: white;
+  font-weight: 300;
+}
+
+.header__text h2 {
+  font-size: rem(48px);
+  line-height: 0.5;
+}
+
+.header__text p {
+  font-size: rem(24px);
+}
+
+.header__text p small {
+  display: block;
+}
+
+.header__elem-top {
+  text-align: center;
+  margin: 0 auto;
+  margin-top: rem(112px);
+}
+
+.heptagon {
+  display: inline-block;
+  position: relative;
+  background: url("../img/border_white.png") no-repeat;
+  width: rem(170px);
+  height: rem(180px);
+  margin: 0 rem(10px);
+  cursor: pointer;
+}
+
+.heptagon:hover {
+  background: url("../img/purple_bg.png") no-repeat;
+}
+
+.heptagon .logo {
+  width: rem(67px);
+  height: rem(70px);
+  display: inline-block;
+  text-align: center;
+  margin-top: rem(42px);
+  z-index: 2;
+}
+
+.heptagon .elem-top__left-logo__img {
+  background: url(../img/services_icon.png) no-repeat 0px 0px;
+}
+
+.heptagon .elem-top__right-logo__img {
+  background: url(../img/portfolio_icon.png) no-repeat 0px 0px;
+}
+
+.heptagon .block-left__about-logo__img {
+  background: url(../img/about_icon.png) no-repeat 0px 0px;
+}
+
+.heptagon .block-left__team-logo__img {
+  background: url(../img/team_icon.png) no-repeat 0px 0px;
+}
+
+.heptagon .block-right__blog-logo__img {
+  background: url(../img/blog_icon.png) no-repeat 0px 0px;
+}
+
+.heptagon .block-right__contact-logo__img {
+  background: url(../img/contact_icon.png) no-repeat 0px 0px;
+}
+
+.heptagon label {
+  display: block;
+  font-family: 'latoregular';
+  font-size: rem(18px);
+  text-align: center;
+  color: white;
+  z-index: 2;
+}
+
+.header__elem-bottom {
+  width: 100%;
+  margin-top: rem(30px);
+}
+
+.header__elem-bottom .header__block-left {
+  float: left;
+  width: 50%;
+}
+
+.header__elem-bottom .header_block-right {
+  float: right;
+  width: 50%;
+  text-align: right;
+}
+
+.elem-top__left-logo__img, .elem-top__right-logo__img {
+  margin-left: rem(15px);
+}
+
+.block-right__contact-logo__img, .block-right__blog-logo__img {
+  margin-right: rem(50px);
+}
+
+.block-left__team-logo__img, .block-left__about-logo__img {
+  margin-left: rem(55px);
+}
+
+.header__arrow-elem {
+  text-align: center;
+}
+
+.header__arrow-elem a {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: rem(30px);
+  width: rem(120px);
+  height: rem(120px);
+  background: url(../img/arrow_down.png) no-repeat 0px 0px;
+}
+
+.header__arrow-elem a:hover {
+  background: url(../img/arrow_down_hover.png) no-repeat 0px 0px;
+}
+
+/*# sourceMappingURL=header.css.map */
