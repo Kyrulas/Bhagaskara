@@ -1,0 +1,9 @@
+.about {
+  width: 100%;
+}
+
+.about__header {
+  background: url(../img/about_header.png) no-repeat;
+  width: 271px;
+  height: 114px;
+}
