@@ -1,0 +1,60 @@
+.feature {
+  background-color: #eeeeee;
+  padding: rem(171px) rem(0px) rem(227px);
+  font-size: rem(0px);
+}
+
+.feature__container > div {
+  display: inline-block;
+  width: rem(285px);
+  text-align: center;
+  font-family: 'latolight';
+  line-height: rem(30px);
+  color: #676767;
+}
+
+.feature__container > div h2 {
+  font-size: rem(24px);
+}
+
+.feature__container > div p {
+  font-size: rem(16px);
+}
+
+.feature_logo {
+  width: rem(172px);
+  height: rem(186px);
+  margin: 0 auto;
+}
+
+.feature__build__logo {
+  background: url(../img/heart_logo.png) no-repeat;
+}
+
+.feature__modern__logo {
+  background: url(../img/modern_logo.png) no-repeat;
+}
+
+.feature__use__logo {
+  background: url(../img/use_logo.png) no-repeat;
+}
+
+.feature__responsive__logo {
+  background: url(../img/responsive_logo.png) no-repeat;
+}
+
+.feature__build:hover .feature__build__logo {
+  background: url(../img/heart_logo_hover.png) no-repeat;
+}
+
+.feature__modern:hover .feature__modern__logo {
+  background: url(../img/modern_logo_hover.png) no-repeat;
+}
+
+.feature__use:hover .feature__use__logo {
+  background: url(../img/use_logo_hover.png) no-repeat;
+}
+
+.feature__responsive:hover .feature__responsive__logo {
+  background: url(../img/responsive_logo_hover.png) no-repeat;
+}
