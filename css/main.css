@@ -44,12 +44,12 @@
   font-style: normal;
 }
 
-.container:after, .header__elem-bottom:after, .nav-top:after, .about__desk:after, .container:before, .header__elem-bottom:before, .nav-top:before, .about__desk:before {
+.header__elem-bottom:after, .nav-top:after, .about__desk:after, .clear:after, .header__elem-bottom:before, .nav-top:before, .about__desk:before, .clear:before {
   content: "";
   display: table;
 }
 
-.container:after, .header__elem-bottom:after, .nav-top:after, .about__desk:after {
+.header__elem-bottom:after, .nav-top:after, .about__desk:after, .clear:after {
   clear: both;
 }
 
@@ -321,34 +321,34 @@ html {
 
 .about__header {
   background: url(../img/about_header.png) no-repeat;
-  width: 271px;
-  height: 114px;
+  width: 16.9375rem;
+  height: 7.125rem;
   margin: 0 auto;
-  margin-top: 127px;
+  margin-top: 7.9375rem;
 }
 
 .about__desk {
-  margin-top: 137px;
+  margin-top: 8.5625rem;
 }
 
 .about__desc-content {
   float: right;
   font-family: "latolight";
-  font-size: 16px;
-  width: 456px;
+  font-size: 1rem;
+  width: 28.5rem;
   color: #676767;
-  line-height: 36px;
+  line-height: 2.25rem;
   font-weight: 600;
 }
 
 .about__desc-content button {
   box-sizing: border-box;
-  width: 220px;
-  height: 70px;
-  margin-top: 95px;
+  width: 13.75rem;
+  height: 4.375rem;
+  margin-top: 5.9375rem;
   background: #9f449b;
-  border-bottom: solid 5px #6B2E68;
-  border-radius: 7px;
+  border-bottom: solid 0.3125rem #6B2E68;
+  border-radius: 0.4375rem;
   text-align: center;
   color: #FFFFFF;
 }
@@ -356,35 +356,202 @@ html {
 .about__desk-img {
   float: left;
   background: url(../img/screen_img.png) no-repeat;
-  width: 654px;
-  height: 415px;
-  margin-right: 30px;
+  width: 40.875rem;
+  height: 25.9375rem;
+  margin-right: 1.875rem;
 }
 
 .about__footer {
   width: 100%;
-  margin-top: 230px;
+  margin-top: 14.375rem;
   background: url(../img/section_bg.jpg) no-repeat;
   background-size: cover;
+  margin-bottom: 9.375rem;
 }
 
 .about__block {
   text-align: center;
-  padding: 150px 0px;
+  padding: 9.375rem 0px;
 }
 
 .about__block p {
   font-family: "latolight";
-  font-size: 40px;
+  font-size: 2.5rem;
   color: #ffffff;
   font-weight: 600;
 }
 
 .about-logo {
   margin: 0 auto;
-  width: 167px;
-  height: 181px;
+  width: 10.4375rem;
+  height: 11.3125rem;
   background: url(../img/about_study_icon.png) no-repeat;
+}
+
+.team__header {
+  background: url(../img/team_header.png) no-repeat;
+  width: 18.5625rem;
+  height: 7.125rem;
+  margin: 0 auto;
+}
+
+.team__arrows {
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 8.125rem;
+}
+
+.team__arrows-next, .team__arrows-prev {
+  width: 4.0625rem;
+  height: 4.375rem;
+  outline-style: none;
+  border: 0;
+}
+
+.team__arrows-next {
+  background: url(../img/arrow_right.png) no-repeat;
+}
+
+.team__arrows-next:hover {
+  background: url(../img/arrow_right_hover.png) no-repeat;
+}
+
+.team__arrows-prev {
+  background: url(../img/arrow_left.png) no-repeat;
+}
+
+.team__arrows-prev:hover {
+  background: url(../img/arrow_left_hover.png) no-repeat;
+}
+
+.team__container__row, .team__container__second_row {
+  width: 71.25rem;
+  font-size: 0px;
+  margin: 9.6875rem 0;
+}
+
+.team__container__second_row {
+  display: none;
+}
+
+.workers {
+  width: 33.33%;
+  display: inline-block;
+  text-align: center;
+}
+
+.workers h2 {
+  font-family: 'latobold';
+  font-size: 1.5rem;
+  color: 484848;
+  line-height: 1.5625rem;
+}
+
+.workers p {
+  font-family: 'latoregular';
+  font-size: 1.125rem;
+  color: #777777;
+  line-height: 1.5625rem;
+}
+
+.workers a {
+  margin-right: 1.5625rem;
+  transition-duration: 0.4s;
+}
+
+.workers a img:hover {
+  -webkit-transform: scale(1.2, 1.2);
+      -ms-transform: scale(1.2, 1.2);
+          transform: scale(1.2, 1.2);
+}
+
+.team__img {
+  width: 15.625rem;
+  height: 15.625rem;
+  box-sizing: border-box;
+  overflow: hidden;
+  border-radius: 50%;
+  border: 0.125rem solid #fff;
+  margin: 0 auto;
+}
+
+.team__img img {
+  display: block;
+  width: auto;
+  max-height: 100%;
+}
+
+.skill_header {
+  background: url(../img/skill_header.png) no-repeat;
+  width: 18.5625rem;
+  height: 7.125rem;
+  margin: 0 auto;
+  margin-bottom: 180px;
+}
+
+.skill_left {
+  width: 430px;
+  float: left;
+  margin-left: 45px;
+}
+
+.skill_right {
+  width: 430px;
+  float: right;
+  margin-right: 45px;
+}
+
+.skill h3 {
+  font-size: 22px;
+  font-family: 'helveticabold';
+  color: #222222;
+  line-height: 16px;
+  text-align: left;
+  float: left;
+  margin-bottom: 0px;
+}
+
+.skill-percent {
+  float: right;
+  font-size: 24px;
+  font-family: 'latolight';
+  line-height: 18px;
+  color: #777777;
+  margin-bottom: 0px;
+}
+
+.score {
+  width: 430px;
+  background: #eee7e7;
+}
+
+.score p {
+  background: #9F449B;
+  width: 85%;
+  height: 20px;
+}
+
+.skill__score-web p {
+  width: 90%;
+}
+
+.skill__score-design p {
+  width: 75%;
+}
+
+.skill__score-html p {
+  width: 70%;
+}
+
+.skill__score-ul p {
+  width: 85%;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
 }
 
 /*# sourceMappingURL=main.css.map */

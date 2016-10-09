@@ -1,0 +1,72 @@
+.skill_header {
+  background: url(../img/skill_header.png) no-repeat;
+  width: rem(297px);
+  height: rem(114px);
+  margin: 0 auto;
+  margin-bottom: 180px;
+}
+
+.skill_left {
+  width: 430px;
+  float: left;
+  margin-left: 45px;
+}
+
+.skill_right {
+  width: 430px;
+  float: right;
+  margin-right: 45px;
+}
+
+.skill h3 {
+  font-size: 22px;
+  font-family: 'helveticabold';
+  color: #222222;
+  line-height: 16px;
+  text-align: left;
+  float: left;
+  margin-bottom: 0px;
+}
+
+.skill-percent {
+  float: right;
+  font-size: 24px;
+  font-family: 'latolight';
+  line-height: 18px;
+  color: #777777;
+  margin-bottom: 0px;
+}
+
+.score {
+  width: 430px;
+  background: #eee7e7;
+}
+
+.score p {
+  background: #9F449B;
+  width: 85%;
+  height: 20px;
+}
+
+.skill__score-web p {
+  width: 90%;
+}
+
+.skill__score-design p {
+  width: 75%;
+}
+
+.skill__score-html p {
+  width: 70%;
+}
+
+.skill__score-ul p {
+  width: 85%;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+}
