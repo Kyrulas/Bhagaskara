@@ -1,0 +1,130 @@
+.services {
+  background-color: #eee7e7;
+  padding-top: rem(125px);
+  position: relative;
+}
+
+.services__statistic {
+  margin-bottom: 130px;
+}
+
+.services__statistic-value {
+  width: 25%;
+  float: left;
+  font-family: 'helveticalight' sans-serif;
+  text-align: center;
+}
+
+.services__statistic-value h2 {
+  font-size: rem(64px);
+  line-height: rem(18px);
+  color: #222222;
+  font-weight: 100;
+  margin: rem(25px) 0;
+}
+
+.services__statistic-value p {
+  font-size: rem(16px);
+  line-height: rem(24px);
+  color: #777777;
+}
+
+.services__slider {
+  height: rem(535px);
+}
+
+.services__slider .one:checked ~ .services__boxes > .one,
+.services__slider .two:checked ~ .services__boxes > .two,
+.services__slider .three:checked ~ .services__boxes > .three,
+.services__slider .four:checked ~ .services__boxes > .four,
+.services__slider .five:checked ~ .services__boxes > .five {
+  opacity: 1;
+}
+
+.services__slider .one:checked ~ .slider_labels > .s1_label,
+.services__slider .two:checked ~ .slider_labels > .s2_label,
+.services__slider .three:checked ~ .slider_labels > .s3_label,
+.services__slider .four:checked ~ .slider_labels > .s4_label,
+.services__slider .five:checked ~ .slider_labels > .s5_label {
+  background-color: #777777;
+}
+
+.services__boxes {
+  position: relative;
+  width: 884px;
+  height: 360px;
+  margin: 0 auto;
+}
+
+.services__slider-block {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 1.5s ease-in-out;
+}
+
+.slider_nav {
+  display: none;
+}
+
+.slider_labels {
+  text-align: center;
+  margin-top: 35px;
+}
+
+.slider_labels label {
+  width: 10px;
+  height: 10px;
+  border: 1px solid;
+  border-radius: 50%;
+  background-color: #fff;
+  display: inline-block;
+  margin-right: 9px;
+  cursor: pointer;
+}
+
+.services__slider_img {
+  width: 170px;
+  height: 170px;
+  box-sizing: border-box;
+  overflow: hidden;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+
+.services__slider_img img {
+  display: block;
+  width: auto;
+  max-height: 100%;
+}
+
+.services__slider_info {
+  text-align: center;
+}
+
+.services__slider_info h2 {
+  font-family: 'helveticalight' ,sans-serif;
+  font-size: 33px;
+  color: #4b4b4b;
+  font-weight: 100;
+}
+
+.services__slider_info p {
+  font-family: 'helveticabold', sans-serif;
+  font-size: 20px;
+  line-height: 26px;
+  color: #777777;
+}
+
+.services__bottom {
+  background-color: #FFFFFF;
+  height: rem(55px);
+  width: rem(1280px);
+  bottom: 0;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+      -ms-transform: translate(-50%);
+          transform: translate(-50%);
+}
