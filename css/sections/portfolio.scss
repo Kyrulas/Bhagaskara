@@ -3,12 +3,12 @@
 	width: rem(369px);
 	height:rem(114px);
 	margin:0 auto;	
-	margin-top:30px;
+	margin-top:rem(30px);
 }
 .portfolio__nav{
 	display: block;
     width: 100%;
-	margin-top: 80px;
+	margin-top: rem(80px);
     ul{
     	text-align: center;
     	list-style: none;
@@ -19,7 +19,7 @@
 		    display: inline-block;
 		    margin: 0;
 		    outline: none;
-		    margin-right: 20px;
+		    margin-right: rem(20px);
     	}
 
     	label{
@@ -27,14 +27,14 @@
 		    outline: none;
 		    cursor: pointer;
 		    border: 1px solid #172F41;
-		    padding: 10px 25px;
-		    border-radius: 4px;
+		    padding: rem(10px) rem(25px);
+		    border-radius: rem(4px);
 		    color: #172F41;
-		    font-family: 'helveticalight';
-		    font-size: 18px;
+		    font-family: 'helveticalight',sans-serif;
+		    font-size: rem(18px);
 
 		    &:hover{
-		    	border: 1px solid #9f449b;
+		    	border: rem(1px) solid #9f449b;
 		    }
     	}
     	input{
@@ -50,11 +50,11 @@
     }
 }
 .portfolio__works{
-	font-size: 0px;
-	margin-top: 70px;
+	font-size: rem(0px);
+	margin-top: rem(70px);
 }
 .portfolio__works_top{
-	margin-bottom: 35px;
+	margin-bottom: rem(35px);
 }
 .portfolio__works-block{
 	width: 33.33%;
@@ -62,8 +62,8 @@
     text-align: center;
 }
 .portfolio__img{
-	width: 360px;
-	height: 360px;
+	width: rem(360px);
+	height: rem(360px);
 	box-sizing: border-box;
 	overflow: hidden;
 		&:hover{
@@ -84,18 +84,18 @@
 
 .portfolio__desc{
 	text-align: center;
-	font-family: 'helveticalight';
+	font-family: 'helveticalight' ,sans-serif;
 
 	h2{
-		font-size: 24px;
-		line-height: 26px;
+		font-size: rem(24px);
+		line-height: rem(26px);
 		color:#222222;
 		font-weight: 100;
 		margin-bottom: 0px;
 	}
 	p{
-		font-size: 16px;
-		line-height: 26px;
+		font-size: rem(16px);
+		line-height: rem(26px);
 		color:#777777;
 		margin:0;
 	}
