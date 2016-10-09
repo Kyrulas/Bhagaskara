@@ -1,5 +1,8 @@
  .get_in_touch{
  	margin-top: rem(190px);
+ 	.container{
+ 		@extend %clearfix;
+ 	}
  }
  .get_in_touch_header{
     background: url(../img/touch_header.png) no-repeat;
