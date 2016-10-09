@@ -7,25 +7,33 @@
 
 }
 .skill_left{
-	width: 430px;
+	width: rem(430px);
 	float:left;
-	margin-left: 45px;
+	margin-left: rem(45px);
 	
 }
 .skill_right{
-	width: 430px;
+	width: rem(430px);
 	float:right;
-	margin-right: 45px;
+	margin-right: rem(45px);
 }
 .skill{
 	h3{
-		font-size: 22px;
+		font-size: rem(22px);
 		font-family: 'helveticabold';
 		color: rgb(34, 34, 34);
-		line-height: 16px;
+		line-height: rem(16px);
   		text-align: left;
   		float:left;
-  		margin-bottom: 0px;
+  		margin-bottom: rem(0px);
+  	}
+
+	.container{
+		margin-bottom: rem(190px);
+
+		&:after{
+		@extend %clearfix;
+		}
 	}
 }
 .clear{
@@ -34,21 +42,21 @@
 
 .skill-percent{
 	float:right;
-	font-size: 24px;
+	font-size: rem(24px);
 	font-family: 'latolight';
-	line-height:18px;
+	line-height:rem(18px);
 	color:#777777;
-	margin-bottom: 0px;
+	margin-bottom: rem(0px);
 }
 .score{
 
-	width: 430px;
+	width: rem(430px);
 	background: #eee7e7;
 
 	p{
 	background: #9F449B;
     width: 85%;
-    height: 20px;
+    height: rem(20px);
 	}
 }
 .skill__score-web p{
