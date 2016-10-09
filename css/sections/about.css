@@ -12,6 +12,7 @@
 
 .about__desk {
   margin-top: rem(137px);
+  margin-bottom: rem(230px);
 }
 
 .about__desc-content {
@@ -26,14 +27,22 @@
 
 .about__desc-content button {
   box-sizing: border-box;
-  width: rem(220px);
-  height: rem(70px);
-  margin-top: rem(95px);
+  font-size: rem(20px);
+  padding: rem(16px) rem(60px);
+  margin-top: rem(90px);
   background: #9f449b;
-  border-bottom: solid rem(5px) #6B2E68;
+  border-bottom: solid rem(4px) #6B2E68;
   border-radius: rem(7px);
   text-align: center;
   color: #FFFFFF;
+}
+
+.about__desc-content button:hover {
+  color: #6B2E68;
+  background: transparent;
+  border: solid rem(2px) #6B2E68;
+  border-top: solid rem(5px) #6B2E68;
+  border-radius: rem(10px);
 }
 
 .about__desk-img {
@@ -46,7 +55,6 @@
 
 .about__footer {
   width: 100%;
-  margin-top: rem(230px);
   background: url(../img/section_bg.jpg) no-repeat;
   background-size: cover;
 }
@@ -68,4 +76,11 @@
   width: rem(167px);
   height: rem(181px);
   background: url(../img/about_study_icon.png) no-repeat;
+}
+
+.think-logo {
+  margin: 0 auto;
+  width: rem(167px);
+  height: rem(181px);
+  background: url(../img/about_think_icon.png) no-repeat;
 }
