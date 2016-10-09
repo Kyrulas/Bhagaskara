@@ -44,12 +44,12 @@
   font-style: normal;
 }
 
-.header__elem-bottom:after, .nav-top:after, .about__desk:after, .skill .container:after, .clear:after, .services .container:after, .services__statistic:after, .last_value:after, .header__elem-bottom:before, .nav-top:before, .about__desk:before, .clear:before, .services .container:before, .services__statistic:before, .last_value:before {
+.header__elem-bottom:after, .nav-top:after, .about__desk:after, .skill .container:after, .clear:after, .services .container:after, .services__statistic:after, .last_value:after, .get_in_touch .container:after, .header__elem-bottom:before, .nav-top:before, .about__desk:before, .clear:before, .services .container:before, .services__statistic:before, .last_value:before, .get_in_touch .container:before {
   content: "";
   display: table;
 }
 
-.header__elem-bottom:after, .nav-top:after, .about__desk:after, .skill .container:after, .clear:after, .services .container:after, .services__statistic:after, .last_value:after {
+.header__elem-bottom:after, .nav-top:after, .about__desk:after, .skill .container:after, .clear:after, .services .container:after, .services__statistic:after, .last_value:after, .get_in_touch .container:after {
   clear: both;
 }
 
@@ -879,6 +879,15 @@ html, body {
 
 .get_in_touch-icons .get_in_touch-gl:hover {
   background-position: -9.625rem -3.75rem;
+}
+
+.footer_logo {
+  width: 274px;
+  height: 63px;
+  margin: 0 auto;
+  margin-top: 160px;
+  margin-bottom: 130px;
+  background: url(../img/footer_logo.png) no-repeat;
 }
 
 /*# sourceMappingURL=main.css.map */
