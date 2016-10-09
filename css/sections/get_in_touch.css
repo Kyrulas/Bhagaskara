@@ -1,0 +1,128 @@
+.get_in_touch {
+  margin-top: rem(190px);
+}
+
+.get_in_touch_header {
+  background: url(../img/touch_header.png) no-repeat;
+  width: rem(369px);
+  height: rem(114px);
+  margin: 0 auto;
+  margin-bottom: rem(170px);
+}
+
+.get_in_touch__form {
+  width: 50%;
+  float: left;
+}
+
+.get_in_touch__form input[type="text"], .get_in_touch__form textarea {
+  box-sizing: border-box;
+  width: rem(520px);
+  padding: 3%;
+  color: #5D5D5D;
+  border: rem(1px) solid #4E4E4E;
+  outline: none;
+  font-size: 18px;
+  margin-bottom: 7%;
+  display: block;
+}
+
+.get_in_touch__form textarea {
+  min-height: rem(300px);
+  resize: none;
+}
+
+.form__send {
+  width: rem(224px);
+}
+
+.form__send a {
+  box-sizing: border-box;
+  font-size: rem(20px);
+  display: block;
+  margin: 0 auto;
+  padding: rem(18px) rem(60px);
+  margin-top: rem(30px);
+  background: #9f449b;
+  border-bottom: solid rem(4px) #6B2E68;
+  border-radius: rem(7px);
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.form__send a:hover {
+  color: #6B2E68;
+  background: transparent;
+  border: solid rem(1px) #6B2E68;
+  border-top: solid rem(5px) #6B2E68;
+  border-radius: rem(10px);
+}
+
+.get_in_touch__info {
+  box-sizing: border-box;
+  width: 50%;
+  float: right;
+  padding: 0 rem(30px);
+}
+
+.get_in_touch__info p {
+  font-family: 'helveticalight',sans-serif;
+  font-size: rem(22px);
+  line-height: rem(30px);
+  font-weight: 100;
+  margin: 0;
+  color: #4b4b4b;
+}
+
+.get_in_touch__info h4, .get_in_touch__info a {
+  font-family: 'helveticabold', sans-serif;
+  font-size: rem(28px);
+  line-height: rem(38px);
+  color: #222222;
+  margin-top: rem(50px) 0 rem(40px);
+}
+
+.get_in_touch__info a {
+  display: block;
+  margin: 0;
+  font-weight: bold;
+}
+
+.get_in_touch-icons {
+  margin-top: rem(50px);
+}
+
+.get_in_touch-icons a {
+  display: inline-block;
+}
+
+.get_in_touch-icons span {
+  width: rem(60px);
+  height: rem(60px);
+  background: url(../img/get_in_touch_icons.png) no-repeat 0px 0px;
+  display: inline-block;
+}
+
+.get_in_touch-icons .get_in_touch-fb {
+  background-position: rem(-6px) 0px;
+}
+
+.get_in_touch-icons .get_in_touch-fb:hover {
+  background-position: rem(-7px) rem(-60px);
+}
+
+.get_in_touch-icons .get_in_touch-tw {
+  background-position: rem(-79px) 0px;
+}
+
+.get_in_touch-icons .get_in_touch-tw:hover {
+  background-position: rem(-80px) rem(-60px);
+}
+
+.get_in_touch-icons .get_in_touch-gl {
+  background-position: rem(-154px) 0px;
+}
+
+.get_in_touch-icons .get_in_touch-gl:hover {
+  background-position: rem(-154px) rem(-60px);
+}
