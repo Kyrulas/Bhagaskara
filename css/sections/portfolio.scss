@@ -1,0 +1,129 @@
+.portfolio_header{
+	background: url(../img/portfolio_header.png)no-repeat;
+	width: rem(369px);
+	height:rem(114px);
+	margin:0 auto;	
+	margin-top:30px;
+}
+.portfolio__nav{
+	display: block;
+    width: 100%;
+	margin-top: 80px;
+    ul{
+    	text-align: center;
+    	list-style: none;
+
+    	li{
+    		text-align: center;
+		    list-style: none;
+		    display: inline-block;
+		    margin: 0;
+		    outline: none;
+		    margin-right: 20px;
+    	}
+
+    	label{
+    		margin: 0;
+		    outline: none;
+		    cursor: pointer;
+		    border: 1px solid #172F41;
+		    padding: 10px 25px;
+		    border-radius: 4px;
+		    color: #172F41;
+		    font-family: 'helveticalight';
+		    font-size: 18px;
+
+		    &:hover{
+		    	border: 1px solid #9f449b;
+		    }
+    	}
+    	input{
+			display: none;
+    			&:checked{
+    			 ~ label{
+    			background-color:#9f449b;
+    			color:white;
+    			border-color:#9f449b;;
+    			}
+    		}
+    	}
+    }
+}
+.portfolio__works{
+	font-size: 0px;
+	margin-top: 70px;
+}
+.portfolio__works_top{
+	margin-bottom: 35px;
+}
+.portfolio__works-block{
+	width: 33.33%;
+    display: inline-block;
+    text-align: center;
+}
+.portfolio__img{
+	width: 360px;
+	height: 360px;
+	box-sizing: border-box;
+	overflow: hidden;
+		&:hover{
+			background-color:#565d67;
+			img{
+				opacity: 0.6;
+			}
+
+		} 
+
+	img{
+		display: block;
+		width: auto;
+		max-height:100%;
+		border:0px;
+	}
+}
+
+.portfolio__desc{
+	text-align: center;
+	font-family: 'helveticalight';
+
+	h2{
+		font-size: 24px;
+		line-height: 26px;
+		color:#222222;
+		font-weight: 100;
+		margin-bottom: 0px;
+	}
+	p{
+		font-size: 16px;
+		line-height: 26px;
+		color:#777777;
+		margin:0;
+	}
+}
+.portfolio__button{
+	button{
+	box-sizing:border-box;
+	font-size: rem(20px);
+	display: block;
+	margin:0 auto;
+	padding: rem(18px) rem(60px);	
+	margin-top: rem(55px); 	
+	background: #9f449b;
+    border-bottom: solid rem(4px) #6B2E68;
+    border-radius: rem(7px);
+    text-align: center;
+    color: #FFFFFF;
+
+    	&:hover{
+	    	color: #6B2E68;
+		    background: transparent;
+		    border: solid rem(2px) #6B2E68;
+		    border-top: solid rem(5px) #6B2E68;
+		    border-radius: rem(10px);
+		   
+	    	}
+	}
+}
+
+
+
