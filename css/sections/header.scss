@@ -3,37 +3,48 @@ html{
 	height:100%;
 	font-size: 16px;
 }
-
-
+.wrapper{
+	@extend %clearfix;
+}
 .header{
+	height: rem(1046px);
+	overflow: hidden;
+}
+.header_bg{
 	display: block;
 	background: url("../img/background.jpg")no-repeat ;
-	height: rem(1128px);
+	height: rem(1073px);
+	background-position: 50% 50%;
 	@include background-size(cover);
 }
 .container {
-    width: rem(1140px);
+    width: rem(1091.190px);
     margin:0 auto;
     box-sizing:border-box;
+    @extend %clearfix;
 }
 
 .header__top{
 	text-align:center;
-	padding-top:rem(121px);
+	padding-top:rem(104px);
+	img{
+		width: rem(458.71px);
+	}
 }
 .header__text{
-	margin-top:rem(80px);
+	margin-top:rem(76.136px);
 	text-align:center;
 	font-family:"latohairline";
 	color: rgb(255, 255, 255);
 	font-weight: 300;
 	h2{
 	font-size:rem(48px);
-  	line-height: 0.5;
+  line-height: 0.5;
 	}
 
 	p{
-	font-size:rem(24px);
+	font-size:rem(24.2px);
+	line-height:rem(23px);
 		small{
 			display: block;
 		}
@@ -43,75 +54,97 @@ html{
 .header__elem-top{
 	text-align: center;
     margin: 0 auto;
-    margin-top:rem(112px);
+    margin-top:rem(113px);
 }
 .heptagon{
 	display: inline-block;
 	position: relative;
 	background: url("../img/border_white.png") no-repeat;
-    width: rem(170px);
-    height: rem(185px);
-    cursor:pointer; 
-    @include background-size(cover);
+  width: rem(158.9339px);
+  height: rem(172.2577px);
+  cursor:pointer; 
+  @include background-size(cover);
 
     &:hover{
      	background: url("../img/purple_bg.png") no-repeat;
+     	width: rem(158.9339px);
+     	height: rem(172.2577px);
+     	@include background-size(cover);
+     		@include transition(0.5s all);
      }
 
     .logo{
-    width: rem(67px);
-    height: rem(70px);
-    display: inline-block;
-    text-align: center;
-    margin-top:rem(42px);
+    display: block;
+    margin: 0 auto;
+    margin-top: rem(35px);
     z-index: 2;
     }
  
 //SERVICES LOGO
     .elem-top__left-logo__img{
-    	background: url(../img/services_icon.png) no-repeat 0px 0px; 
+    	background: url(../img/services_icon.png) no-repeat ; 
+    	width: rem(58.0537px);
+    	height: rem(51.3918px);
+    	@include background-size(cover);
     }  
 //PORTFOLIO LOGO
 	.elem-top__right-logo__img{
-		background: url(../img/portfolio_icon.png) no-repeat 0px 0px; 
+		background: url(../img/portfolio_icon.png) no-repeat ; 
+		width: rem(47.585px);
+		height: rem(50.4401px);
+		@include background-size(cover);
 	}
 //ABOUT LOGO
 	.block-left__about-logo__img{
-		background: url(../img/about_icon.png) no-repeat 0px 0px; 
+		background: url(../img/about_icon.png) no-repeat;
+		width: rem(54.2469px);
+		height: rem(54.2469px);
+		@include background-size(cover);
+
 	}
 //TEAM LOGO
 	.block-left__team-logo__img{
-		background: url(../img/team_icon.png) no-repeat 0px 0px; 
+		background: url(../img/team_icon.png) no-repeat;
+		width: rem(53.2952px); 
+		height: rem(53.2952px);
+		@include background-size(cover);
 	}
 //BLOG LOGO
 	.block-right__blog-logo__img{
-		background: url(../img/blog_icon.png) no-repeat 0px 0px; 
+		background: url(../img/blog_icon.png) no-repeat; 
+		width: rem(55.1986px);
+		height: rem(55.1986px);
+		@include background-size(cover);
 	}
 //CONTACT LOGO
 	.block-right__contact-logo__img{
-		background: url(../img/contact_icon.png) no-repeat 0px 0px; 
+		background: url(../img/contact_icon.png) no-repeat; 
+		width: rem(55.1986px);
+		height: rem(55.1986px);
+		@include background-size(cover);
 	}
      label{
      	display: block;
      	font-family: 'latoregular';
      	font-size: rem(18px);
      	text-align: center;
-		color: rgb(255, 255, 255);
-		z-index: 2;
-		font-weight: bold;
+			color: rgb(255, 255, 255);
+			z-index: 2;
+			font-weight: bold;
+			margin-top: rem(26px);
      }
 
 }
   .header__block-left__about,.elem-top-left{
-    	margin-right: rem(29px);
+    	margin-right: rem(25.280px);
     }
     .header__block-right__contact{
-		margin-left: rem(29px);
+		margin-left: rem(21.760px);
     }
 
 .header__elem-bottom{
 	width: 100%;
-	margin-top:rem(30px);
+	margin-top:rem(23.200px);
 	@extend %clearfix;
 		.header__block-left{
 			float: left;
@@ -141,15 +174,18 @@ html{
 	display:block;
 	margin: 0 auto;
 	margin-bottom: rem(30px);
-	width: rem(120px);
-    height: rem(120px);
-	background: url(../img/arrow_down.png) no-repeat 0px 0px; 
-
+	width: rem(82px);
+   height: rem(89px);
+	background: url(../img/arrow_down.png) no-repeat; 
+	@include background-size(cover);
 	&:hover{
-		background: url(../img/arrow_down_hover.png) no-repeat 0px 0px; 
+		background: url(../img/arrow_down_hover.png) no-repeat;
+		width: rem(82px);
+   	height: rem(89px);
+    @include background-size(cover);
+    @include transition(0.5s all);
 		}
 	}
 }
-
 
 

@@ -3,15 +3,17 @@
 }
 .about__header{
 	background: url(../img/about_header.png) no-repeat;
-	width: rem(271px);
-	height:rem(114px);
+	width: rem(257.91px);
+	height:rem(108.493px);
+	@include background-size(cover);
 	margin:0 auto;
-	margin-top: rem(127px);
+	margin-top: rem(121px);
 }
 .about__desk{
-	margin-top: rem(137px);
+	margin-top: rem(130px);
 	@extend %clearfix;
-	margin-bottom: rem(230px);
+	margin-bottom: rem(221px);
+	box-sizing: border-box;
 }
 .about__desc-content{
 	float:right;
@@ -19,61 +21,81 @@
 	font-size: rem(16px);
 	width: 	rem(456px);
 	color: #676767;
-	line-height: rem(36px);
+	line-height: rem(33px);
 	font-weight: 600;
+	box-sizing: border-box;
+	padding-left: rem(19px);
 
 	button{
-	box-sizing:border-box;
-	font-size: rem(20px);
-	padding: rem(16px) rem(60px);	
-	margin-top: rem(90px); 	
-	background: #9f449b;
-    border-bottom: solid rem(4px) #6B2E68;
-    border-radius: rem(7px);
-    text-align: center;
-    color: #FFFFFF;
+		box-sizing:border-box;
+		font-size: rem(19px);
+		padding: rem(17px) rem(61px);	
+		margin-top: rem(89px); 	
+		background: #9f449b;
+		border-bottom: solid rem(4px) #6B2E68;
+		border-radius: rem(7px);
+		text-align: center;
+		color: #FFFFFF;
+		cursor: pointer;
+		outline: none;
 
-    	&:hover{
-	    	color: #6B2E68;
-		    background: transparent;
-		    border: solid rem(2px) #6B2E68;
-		    border-top: solid rem(5px) #6B2E68;
-		    border-radius: rem(10px);
-	    	}
+		&:hover{
+			color: #6B2E68;
+			background: transparent;
+			border: solid rem(2px) #6B2E68;
+			border-top: solid rem(5px) #6B2E68;
+			border-radius: rem(10px);
+		}
 	}
 }
 .about__desk-img{
 	float:left;
 	background: url(../img/screen_img.png)no-repeat;
-	width: rem(654px);
-	height: rem(415px);
-	margin-right: rem(30px);
+	width: rem(624px);
+	height: rem(394.9555px);
+	@include background-size(cover);
 }
 //ABOUT FOOTER BLOCK
 .about__footer{
-		width: 100%;
-		background: url(../img/section_bg.jpg)no-repeat;
-		background-size:cover;
+	width: 100%;
+	background: url(../img/section_bg.jpg)no-repeat;
+	background-size:cover;
 }
-.about__block{
-		text-align:center;
-		padding: rem(150px) 0px;
+.about__block,.think__block{
+	text-align:center;
+	padding: rem(145px) 0px rem(137px);
+	width: rem(700px);
+	margin: 0 auto;
 	p{
 		font-family: "latolight";
-		font-size: rem(40px);
+		font-size: rem(45px);
 		color:#ffffff;
 		font-weight: 600;
+		margin-top: rem(60px);
+		word-spacing: rem(2px);
+		letter-spacing: rem(1.3px);
+		line-height: rem(35px);
+	}
+}
+.think__block{
+	padding-bottom: rem(116.5px);
+	p {
+		line-height: rem(55px);
+		margin-top: rem(50px);
+		margin-bottom: rem(0px);
 	}
 }
 .about-logo{
 	margin:0 auto;
-	width: rem(167px);
-	height:rem(181px);
+	width: rem(158.93px);
+	height:rem(172.26px);
 	background: url(../img/about_study_icon.png) no-repeat;
+	@include background-size(cover);
 }
 .think-logo{
 	margin:0 auto;
-	width: rem(167px);
-	height:rem(181px);
+	width: rem(158.93px);
+	height:rem(172.26px);
 	background: url(../img/about_think_icon.png) no-repeat;
+	@include background-size(cover);
 }

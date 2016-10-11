@@ -1,39 +1,48 @@
 .skill_header{
 	background: url(../img/skill_header.png)no-repeat;
-	width: rem(297px);
-	height:rem(114px);
+	width: rem(282.65px);
+	height:rem(108.49px);
 	margin:0 auto;	
-	margin-bottom: 180px;
+	margin-bottom: rem(180px);
+	@include background-size(cover);
 
 }
 .skill_left{
-	width: rem(430px);
+	width: rem(462px);
 	float:left;
 	margin-left: rem(45px);
-	
 }
 .skill_right{
-	width: rem(430px);
-	float:right;
-	margin-right: rem(45px);
+	width: rem(462px);
+	float:left;
+	margin-left: rem(34px);
 }
+.skill__html,.skill__ul {
+	padding-top: rem(25.09px);
+}
+
 .skill{
+	margin-bottom: rem(175px);
 	h3{
-		font-size: rem(22px);
+		font-size: rem(22.2px);
 		font-family: 'helveticabold';
 		color: rgb(34, 34, 34);
 		line-height: rem(16px);
-  		text-align: left;
-  		float:left;
-  		margin-bottom: rem(0px);
+		float:left;
+		margin: rem(0px);
+    margin-left: rem(51.7px);
+    margin-top: rem(3px);
   	}
 
 	.container{
-		margin-bottom: rem(190px);
+		margin-top: rem(100.720px);
 
 		&:after{
 		@extend %clearfix;
 		}
+	}
+	.base{
+	 	margin-top: rem(23.96px);
 	}
 }
 .clear{
@@ -43,39 +52,34 @@
 .skill-percent{
 	float:right;
 	font-size: rem(24px);
-	font-family: 'latolight';
+	font-family: 'helveticalight';
 	line-height:rem(18px);
 	color:#777777;
-	margin-bottom: rem(0px);
+	margin:rem(0px);
+	margin-right: rem(4px);
 }
 .score{
 
-	width: rem(430px);
+	width: rem(398px);
 	background: #eee7e7;
+	margin-left: rem(52.5px);
+	margin-top: rem(23.95px);
 
 	p{
 	background: #9F449B;
-    width: 85%;
     height: rem(20px);
 	}
 }
 .skill__score-web p{
-	width: 90%;
-}
-.skill__score-design p{
-	width: 75%;
+	width: rem(349.891px);
 }
 .skill__score-html p{
-	width: 70%;
+	width: rem(284.891px);
+}
+.skill__score-design p{
+	width: rem(296.891px);
 }
 .skill__score-ul p{
-	width: 85%;
+	width: rem(326.063px);
 }
 
-html,body
-{
-    width: 100%;
-    height: 100%;
-    margin: 0px;
-    padding: 0px;
-}

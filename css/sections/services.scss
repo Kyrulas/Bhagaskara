@@ -8,12 +8,14 @@
 }
 .services__statistic{
 	@extend %clearfix;
-	margin-bottom: 130px;
+	width: rem(1022px);
+  margin: 0 auto;
+  margin-top: rem(20px);
 }
 .services__statistic-value{
 	width: 25%;
 	float:left;
-	font-family: 'helveticalight' sans-serif;
+	font-family: 'helveticalight', sans-serif;
 	text-align: center;
 
 	h2{
@@ -36,6 +38,8 @@
 
 .services__slider{
 	height: rem(535px);
+	margin-top: rem(124px);
+	margin-left: rem(23px);
 	.one:checked ~ .services__boxes > .one,
 	.two:checked ~ .services__boxes > .two,
 	.three:checked ~ .services__boxes > .three,
@@ -53,8 +57,8 @@
 }
 .services__boxes{
 	position:relative;
-	width:884px;
-	height: 360px;
+	width:rem(884px);
+	height: rem(360px);
 	margin: 0 auto;
 }
 .services__slider-block{
@@ -69,21 +73,22 @@
 }
 .slider_labels{
 	text-align: center;
-	margin-top: 35px;
+	margin-top: rem(10px);
+	word-spacing: rem(5px);
 	label{
-		width: 10px;
-    height: 10px;
+		width: rem(9px);
+    height: rem(8px);
     border: 1px solid;
     border-radius:50%;
     background-color:#fff;
     display: inline-block;
-    margin-right: 9px;
+    margin-right: rem(9px);
     cursor: pointer;
 	}
 }
 .services__slider_img{
-	width: 170px;
-	height: 170px;
+	width: rem(161px);
+	height: rem(161px);
 	box-sizing:border-box;
 	overflow:hidden;
 	border-radius:50%;
@@ -91,44 +96,36 @@
 
 	img{
 		display: block;
-		width: auto;
-		max-height: 100%;
+		width: rem(228.06px);
+    height: rem(228.06px);
 	}
 }
 .services__slider_info{
 	text-align: center;
+	margin-top: rem(33px);
 	h2{
 	font-family: 'helveticalight' ,sans-serif;
-	font-size: 33px;
+	font-size: rem(31.01px);
 	color:#4b4b4b;
 	font-weight: 100;
+	line-height:rem(37px);
+	word-spacing: rem(1.4px)''
 	}
 	p{
+
 	font-family: 'helveticabold', sans-serif;
-	font-size: 20px;
-	line-height: 26px;
+	font-size: rem(15px);
+	line-height: rem(37px);
 	color:#777777;
 	}
 }
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 .services__bottom{
 	background-color:#FFFFFF;;
-	height: rem(55px);
-	width: rem(1280px);
+	height: rem(50px);
+	width: rem(1218.18px);
 	bottom: 0;
 	position: absolute;
 	left: 50%;

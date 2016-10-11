@@ -1,6 +1,6 @@
 .nav-top{
 	display: block;
-	width: rem(1140px);
+	width: rem(1084px);
 	margin:0 auto;
 	font-size: rem(18px);
 	font-family:  'latolight';
@@ -8,18 +8,19 @@
 }
 .nav-top__logo{
 	float:left;
-	margin:rem(58px) rem(0px) rem(48px);
-	width: rem(161px);
-	height: rem(38px);
+	margin:rem(54px) rem(0px) rem(45px);
+	width: rem(153.22px);
+	height: rem(36.16px);
 	background: url("../img/bhagaskara_logo.png")no-repeat ;
+	@include background-size(cover);
 }
 .nav-top__list{
 	float:right;
-	margin:rem(72px) rem(0px) rem(57px);
+	margin-top:rem(65px);
 	li{
 	display: inline-block;
 	text-decoration: none;
-	padding-left:rem(30px);
+	padding-left:rem(23px);
 
 	  a{
 	  	color: rgb(103, 103, 103);

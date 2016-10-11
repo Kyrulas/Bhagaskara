@@ -1,15 +1,20 @@
  .get_in_touch{
- 	margin-top: rem(190px);
+ 	margin-top: rem(178px);
  	.container{
  		@extend %clearfix;
  	}
  }
  .get_in_touch_header{
     background: url(../img/touch_header.png) no-repeat;
-    width: rem(369px);
-    height: rem(114px);
-    margin: 0 auto;
-    margin-bottom: rem(170px);
+    width: rem(351.2px);
+    height: rem(108.5px);
+    margin-left:rem(383px);
+    margin-bottom: rem(164px);
+    @include background-size(cover);
+ }
+ .get_in_touch__section{
+ 	@extend %clearfix;
+ 	 margin-left: rem(27px);
  }
 
  .get_in_touch__form{
@@ -17,30 +22,31 @@
 	float:left;
 
  	input[type="text"],textarea{
- 	box-sizing:border-box;
- 	width:rem(520px);
-    padding: 3%;
+	 	box-sizing:border-box;
+	 	width:rem(500px);
+    padding: rem(23px);
     color: #5D5D5D;
     border: rem(1px) solid #4E4E4E;
     outline: none;
-    font-size: 18px;
-    margin-bottom: 7%;
+    font-size: rem(18px);
+    margin-bottom: rem(36px);
     display: block;
+
 	}
 	textarea{
-	min-height: rem(300px);
+	min-height: rem(269px);
     resize: none;
 	}
 }
 .form__send{
-	width: rem(224px);
+	width: rem(215px);
+	margin-top: rem(-3px);
 	a{
 	box-sizing:border-box;
 	font-size: rem(20px);
 	display: block;
 	margin:0 auto;
-	padding: rem(18px) rem(60px);	
-	margin-top: rem(30px); 	
+	padding: rem(21px) rem(54px);		
 	background: #9f449b;
     border-bottom: solid rem(4px) #6B2E68;
     border-radius: rem(7px);
@@ -60,58 +66,60 @@
 
 .get_in_touch__info{
 	box-sizing:border-box;
-	width: 50%;
+	width: rem(532px);
 	float:right;
-	padding: 0 rem(30px);
+	padding-left:rem(40px);
 
 	p{
 	font-family: 'helveticalight',sans-serif;
-	font-size: rem(22px);
-	line-height: rem(30px);
+	font-size: rem(21px);
+	line-height: rem(24px);
 	font-weight: 100;
 	margin:0;
 	color: rgb(75, 75, 75);
 	}
 	h4,a{
 	font-family: 'helveticabold', sans-serif;
-	font-size: rem(28px);
-	line-height: rem(38px);
+	font-size: rem(23.56px);
+	line-height: rem(37px);
 	color:#222222;
-	margin-top: rem(50px) 0 rem(40px);
+	margin-top: rem(64px);
 	}
 	a{
 		display: block;
 		margin:0;
 		font-weight: bold;
+		    margin-right: rem(30px);
 	}
 }
 .get_in_touch-icons{
-	margin-top: rem(50px);
+	margin-top: rem(65px);
 	a{
 		display: inline-block;
 	}
 	span{
-	width: rem(60px);
-    height: rem(60px);
+		width: rem(74.5px);
+    height: rem(74.5px);
     background: url(../img/get_in_touch_icons.png) no-repeat 0px 0px;
     display: inline-block;
+    background-size: rem(299.6155px) rem(212.755px);
 	}
 	.get_in_touch-fb{
-	background-position: rem(-6px) 0px;
+	background-position: rem(-7.84px) rem(-9px);
 		&:hover{
-			background-position: rem(-7px) rem(-60px);
+			background-position: rem(-7.84px) rem(-93px);
 		}
 	}
 	.get_in_touch-tw{
-	background-position: rem(-79px) 0px;
+	background-position: rem(-110.975px) rem(-8px);
 		&:hover{
-			background-position: rem(-80px) rem(-60px);
+			background-position: rem(-112px) rem(-94.24px);
 		}
 	}
 	.get_in_touch-gl{
-		background-position: rem(-154px) 0px;
+		background-position: rem(-216.4px) rem(-9px);
 		&:hover{
-			background-position: rem(-154px) rem(-60px);
+			background-position: rem(-215.92px) rem(-93.6px);
 		}
 	}
 }

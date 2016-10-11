@@ -1,67 +1,83 @@
 .team__header{
 	background: url(../img/team_header.png)no-repeat;
-	width: rem(297px);
-	height:rem(114px);
+	width: rem(282.6549px);
+	height:rem(108.4938px);
 	margin:0 auto;	
+	@include background-size(cover);
 }
 .team{
-	margin-top: rem(150px);
+	margin-top: rem(144px);
 }
 .team__arrows{
 	margin:0 auto;
 	text-align: center;
-	margin-top: rem(130px);
+	margin-top: rem(123px);
 }
 .team__arrows-next,.team__arrows-prev{
 	width: rem(65px);
 	height: rem(70px);
 	outline-style: none;
     border: 0;
+    @include transition(0.5s all);
 }
 
 .team__arrows-next{
 	background: url(../img/arrow_right.png) no-repeat;
+	@include background-size(cover);
+	cursor:pointer;
 	&:hover{
 		background: url(../img/arrow_right_hover.png) no-repeat;
+		@include background-size(cover);
+		
 	}
 }
 .team__arrows-prev{
 	background: url(../img/arrow_left.png) no-repeat;
+	@include background-size(cover);
 	&:hover{
 		background: url(../img/arrow_left_hover.png) no-repeat;
+		@include background-size(cover);
 	}
 }
 
 
 .team__container__row, .team__container__second_row{
-	width: rem(1140px);
+	width: rem(1091.190px);
 	font-size: 0px;
-	margin: rem(155px) 0;
+	margin-top: rem(146px);
 }
 .team__container__second_row{
 	display:none;
 }
 
 .workers{
-	width: 33.33%;
+	width: 30%;
 	display: inline-block;
 	text-align: center;
-
+	&:nth-child(2){
+		width: 40%;
+	}
 	h2{
 		font-family: 'latobold';
-		font-size: rem(24px);
-		color:484848;
-		line-height: rem(25px);
+		font-size: rem(22.3998px);
+		color:#484848;
+		line-height: rem(24.84px);
 	}
 	p{
 		font-family: 'latoregular';
 		font-size: rem(18px);
 		color:#777777;
-		line-height: rem(25px);
+		line-height: rem(17.976px);
 	}
 	a{
-		margin-right: rem(25px);
+		margin: rem(11.66px);
 		transition-duration: 0.4s;
+		display: inline-block;
+			img{
+				width: rem(44px);
+				height: rem(44px);
+				@include background-size(cover);
+			}
 		
 	}
 	a img:hover{
@@ -69,16 +85,22 @@
 		}
 }
 .team__img{
-	width: rem(250px);
-	height: rem(250px);
-	box-sizing:border-box;
+	width: rem(237.93px);
+	height: rem(237.93px);
 	overflow: hidden;
     border-radius: 50%;
-    border: rem(2px) solid #fff;
     margin: 0 auto;
 }
 .team__img img{
 	display: block;
     width: auto;
     max-height: 100%;
+}
+
+.team__left-info,
+.team__center-info,
+.team__right-info {
+    margin-top: rem(77px);
+    margin-left: auto;
+    margin-right: auto;
 }

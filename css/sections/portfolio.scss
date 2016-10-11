@@ -1,14 +1,16 @@
 .portfolio_header{
 	background: url(../img/portfolio_header.png)no-repeat;
-	width: rem(369px);
-	height:rem(114px);
+	width: rem(351.2px);
+	height:rem(108.5px);
 	margin:0 auto;	
-	margin-top:rem(30px);
+	margin-top:rem(43px);
+	margin-left: rem(384px);
+	@include background-size(cover);
 }
 .portfolio__nav{
 	display: block;
     width: 100%;
-	margin-top: rem(80px);
+	margin-top: rem(88px);
     ul{
     	text-align: center;
     	list-style: none;
@@ -19,7 +21,7 @@
 		    display: inline-block;
 		    margin: 0;
 		    outline: none;
-		    margin-right: rem(20px);
+		    margin-right: rem(16px);
     	}
 
     	label{
@@ -27,7 +29,7 @@
 		    outline: none;
 		    cursor: pointer;
 		    border: 1px solid #172F41;
-		    padding: rem(10px) rem(25px);
+		    padding: rem(6px) rem(19px);
 		    border-radius: rem(4px);
 		    color: #172F41;
 		    font-family: 'helveticalight',sans-serif;
@@ -54,7 +56,7 @@
 	margin-top: rem(70px);
 }
 .portfolio__works_top{
-	margin-bottom: rem(35px);
+	margin-bottom: rem(24px);
 }
 .portfolio__works-block{
 	width: 33.33%;
@@ -62,10 +64,12 @@
     text-align: center;
 }
 .portfolio__img{
-	width: rem(360px);
-	height: rem(360px);
+	width: rem(342.6px);
+	height: rem(342.6px);
 	box-sizing: border-box;
 	overflow: hidden;
+	margin-left: rem(9.9px);
+  margin-top: rem(2.86px);
 		&:hover{
 			background-color:#565d67;
 			img{
@@ -77,8 +81,8 @@
 	img{
 		display: block;
 		width: auto;
-		max-height:100%;
 		border:0px;
+		height: rem(342.6px);
 	}
 }
 
@@ -106,19 +110,21 @@
 	font-size: rem(20px);
 	display: block;
 	margin:0 auto;
-	padding: rem(18px) rem(60px);	
-	margin-top: rem(55px); 	
+	padding: rem(25px) rem(54px);	
+	margin-top: rem(51px); 	
 	background: #9f449b;
-    border-bottom: solid rem(4px) #6B2E68;
+    border-bottom: solid rem(2px) #6B2E68;
     border-radius: rem(7px);
     text-align: center;
     color: #FFFFFF;
+    cursor: pointer;
+    outline: none;
 
     	&:hover{
 	    	color: #6B2E68;
 		    background: transparent;
 		    border: solid rem(2px) #6B2E68;
-		    border-top: solid rem(5px) #6B2E68;
+		    border-top: solid rem(2px) #6B2E68;
 		    border-radius: rem(10px);
 		   
 	    	}
