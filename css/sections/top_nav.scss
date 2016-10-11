@@ -5,6 +5,13 @@
 	font-size: rem(18px);
 	font-family:  'latolight';
 	@extend %clearfix;
+
+	@include tablets{
+		width: tablet(940px);
+	} 
+	@include smartphones{
+		width: phone(700px);	
+	} 
 }
 .nav-top__logo{
 	float:left;
@@ -13,23 +20,31 @@
 	height: rem(36.16px);
 	background: url("../img/bhagaskara_logo.png")no-repeat ;
 	@include background-size(cover);
+
+	@include tablets{
+		margin:tablet(15px) tablet(0px) tablet(10px);
+	} 
 }
 .nav-top__list{
 	float:right;
 	margin-top:rem(65px);
+
+	@include tablets{
+		margin-top: tablet(25px);
+	} 
 	li{
-	display: inline-block;
-	text-decoration: none;
-	padding-left:rem(23px);
+		display: inline-block;
+		text-decoration: none;
+		padding-left:rem(23px);
 
-	  a{
-	  	color: rgb(103, 103, 103);
+		a{
+			color: rgb(103, 103, 103);
 
-	  	&:hover{
-		color:#9f449b;
-		font-weight: 600;
-	}
-	  }
+			&:hover{
+				color:#9f449b;
+				font-weight: 600;
+			}
+		}
 	}
 }
 

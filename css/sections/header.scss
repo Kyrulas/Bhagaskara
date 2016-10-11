@@ -2,7 +2,24 @@ html{
 	width: 100%;
 	height:100%;
 	font-size: 16px;
+
+	@include desktop{
+		font-size: 15px;
+	} 
+	@include laptop{
+		font-size: 13.2px;
+	} 
+	@include tablets{
+		font-size: 14px;
+	} 
+	@include smartphones{
+		font-size: 12px;
+	} 
+	@include mobilephones{
+		font-size: 10px;
+	} 
 }
+
 .wrapper{
 	@extend %clearfix;
 }
@@ -18,10 +35,17 @@ html{
 	@include background-size(cover);
 }
 .container {
-    width: rem(1091.190px);
-    margin:0 auto;
-    box-sizing:border-box;
-    @extend %clearfix;
+	width: rem(1091.190px);
+	margin:0 auto;
+	box-sizing:border-box;
+	@extend %clearfix;
+
+	@include tablets{
+		width: tablet(960px);
+	} 
+	@include smartphones{
+		width: phone(780px);	
+	} 
 }
 
 .header__top{
@@ -38,123 +62,144 @@ html{
 	color: rgb(255, 255, 255);
 	font-weight: 300;
 	h2{
-	font-size:rem(48px);
-  line-height: 0.5;
+		font-size:rem(48px);
+		line-height: 0.5;
 	}
 
 	p{
-	font-size:rem(24.2px);
-	line-height:rem(23px);
+		font-size:rem(24.2px);
+		line-height:rem(23px);
 		small{
 			display: block;
 		}
 	}
+	@include smartphones{
+		margin-top: 0;
+	} 
 }
 
 .header__elem-top{
 	text-align: center;
-    margin: 0 auto;
-    margin-top:rem(113px);
+	margin: 0 auto;
+	margin-top:rem(113px);
+	@include smartphones{
+		margin-top: 0;
+	} 
 }
 .heptagon{
 	display: inline-block;
 	position: relative;
 	background: url("../img/border_white.png") no-repeat;
-  width: rem(158.9339px);
-  height: rem(172.2577px);
-  cursor:pointer; 
-  @include background-size(cover);
+	width: rem(158.9339px);
+	height: rem(172.2577px);
+	cursor:pointer; 
+	@include background-size(cover);
 
-    &:hover{
-     	background: url("../img/purple_bg.png") no-repeat;
-     	width: rem(158.9339px);
-     	height: rem(172.2577px);
-     	@include background-size(cover);
-     		@include transition(0.5s all);
-     }
+	&:hover{
+		background: url("../img/purple_bg.png") no-repeat;
+		width: rem(158.9339px);
+		height: rem(172.2577px);
+		@include background-size(cover);
+		@include transition(0.5s all);
+	}
 
-    .logo{
-    display: block;
-    margin: 0 auto;
-    margin-top: rem(35px);
-    z-index: 2;
-    }
- 
+	.logo{
+		display: block;
+		margin: 0 auto;
+		margin-top: rem(35px);
+		z-index: 2;
+	}
+
 //SERVICES LOGO
-    .elem-top__left-logo__img{
-    	background: url(../img/services_icon.png) no-repeat ; 
-    	width: rem(58.0537px);
-    	height: rem(51.3918px);
-    	@include background-size(cover);
-    }  
+.elem-top__left-logo__img{
+	background: url(../img/services_icon.png) no-repeat ; 
+	width: rem(58.0537px);
+	height: rem(51.3918px);
+	@include background-size(cover);
+}  
 //PORTFOLIO LOGO
-	.elem-top__right-logo__img{
-		background: url(../img/portfolio_icon.png) no-repeat ; 
-		width: rem(47.585px);
-		height: rem(50.4401px);
-		@include background-size(cover);
-	}
+.elem-top__right-logo__img{
+	background: url(../img/portfolio_icon.png) no-repeat ; 
+	width: rem(47.585px);
+	height: rem(50.4401px);
+	@include background-size(cover);
+}
 //ABOUT LOGO
-	.block-left__about-logo__img{
-		background: url(../img/about_icon.png) no-repeat;
-		width: rem(54.2469px);
-		height: rem(54.2469px);
-		@include background-size(cover);
-
-	}
-//TEAM LOGO
-	.block-left__team-logo__img{
-		background: url(../img/team_icon.png) no-repeat;
-		width: rem(53.2952px); 
-		height: rem(53.2952px);
-		@include background-size(cover);
-	}
-//BLOG LOGO
-	.block-right__blog-logo__img{
-		background: url(../img/blog_icon.png) no-repeat; 
-		width: rem(55.1986px);
-		height: rem(55.1986px);
-		@include background-size(cover);
-	}
-//CONTACT LOGO
-	.block-right__contact-logo__img{
-		background: url(../img/contact_icon.png) no-repeat; 
-		width: rem(55.1986px);
-		height: rem(55.1986px);
-		@include background-size(cover);
-	}
-     label{
-     	display: block;
-     	font-family: 'latoregular';
-     	font-size: rem(18px);
-     	text-align: center;
-			color: rgb(255, 255, 255);
-			z-index: 2;
-			font-weight: bold;
-			margin-top: rem(26px);
-     }
+.block-left__about-logo__img{
+	background: url(../img/about_icon.png) no-repeat;
+	width: rem(54.2469px);
+	height: rem(54.2469px);
+	@include background-size(cover);
 
 }
-  .header__block-left__about,.elem-top-left{
-    	margin-right: rem(25.280px);
-    }
-    .header__block-right__contact{
-		margin-left: rem(21.760px);
-    }
+//TEAM LOGO
+.block-left__team-logo__img{
+	background: url(../img/team_icon.png) no-repeat;
+	width: rem(53.2952px); 
+	height: rem(53.2952px);
+	@include background-size(cover);
+}
+//BLOG LOGO
+.block-right__blog-logo__img{
+	background: url(../img/blog_icon.png) no-repeat; 
+	width: rem(55.1986px);
+	height: rem(55.1986px);
+	@include background-size(cover);
+}
+//CONTACT LOGO
+.block-right__contact-logo__img{
+	background: url(../img/contact_icon.png) no-repeat; 
+	width: rem(55.1986px);
+	height: rem(55.1986px);
+	@include background-size(cover);
+}
+label{
+	display: block;
+	font-family: 'latoregular';
+	font-size: rem(18px);
+	text-align: center;
+	color: rgb(255, 255, 255);
+	z-index: 2;
+	font-weight: bold;
+	margin-top: rem(26px);
+}
+
+}
+.header__block-left__about,.elem-top-left{
+	margin-right: rem(25.280px);
+}
+.header__block-right__contact{
+	margin-left: rem(21.760px);
+}
 
 .header__elem-bottom{
 	width: 100%;
 	margin-top:rem(23.200px);
 	@extend %clearfix;
-		.header__block-left{
-			float: left;
-			width: 50%;
-		}
-		.header_block-right{
-			float:right;
-			width: 50%;
-			text-align: right;
-		}
+	.header__block-left{
+		float: left;
+		width: 50%;
+		@include smartphones{
+			float: none;
+			width: auto;
+			text-align: center;
+			margin: 0 auto;
+		} 
+	}
+	.header_block-right{
+		float:right;
+		width: 50%;
+		text-align: right;
+		@include smartphones{
+			float: none;
+			width: auto;
+			text-align: center;
+			margin: 0 auto;
+		} 
+	}
+	@include smartphones{
+		margin-top: 0;
+	} 
 }
 .elem-top__left-logo__img, .elem-top__right-logo__img{
 	margin-left:rem(15px);
@@ -171,19 +216,19 @@ html{
 	text-align: center;
 
 	a{
-	display:block;
-	margin: 0 auto;
-	margin-bottom: rem(30px);
-	width: rem(82px);
-   height: rem(89px);
-	background: url(../img/arrow_down.png) no-repeat; 
-	@include background-size(cover);
-	&:hover{
-		background: url(../img/arrow_down_hover.png) no-repeat;
+		display:block;
+		margin: 0 auto;
+		margin-bottom: rem(30px);
 		width: rem(82px);
-   	height: rem(89px);
-    @include background-size(cover);
-    @include transition(0.5s all);
+		height: rem(89px);
+		background: url(../img/arrow_down.png) no-repeat; 
+		@include background-size(cover);
+		&:hover{
+			background: url(../img/arrow_down_hover.png) no-repeat;
+			width: rem(82px);
+			height: rem(89px);
+			@include background-size(cover);
+			@include transition(0.5s all);
 		}
 	}
 }

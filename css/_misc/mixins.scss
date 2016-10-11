@@ -4,11 +4,6 @@
 	-moz-box-shadow: $params ;
 }
 
-@mixin border-radius($radius){
-	border-radius: $radius;
-	-webkit-border-radius: $radius;
-	-moz-border-radius: $radius;
-}
 
 %clearfix{
 	&:after, &:before {
@@ -38,30 +33,43 @@
 @function rem($px) {
 	@return $px / 16px + 0rem;
 }
+//responsive
+@function tablet($px) {
+	@return $px / 15px + 0rem;
+}
+@function phone($px) {
+	@return $px / 12px + 0rem;
+}
 
 
 @mixin desktop {
-	@media screen and (max-width: 1200px) {
+	@media screen and (max-width: 1360px) {
 		@content;
 	}
 }
 
 @mixin laptop {
-	@media screen and (max-width: 992px) {
+	@media screen and (max-width: 1170px) {
 		@content;
 	}
 }
 
 
 @mixin tablets {
-	@media screen and (max-width: 768px) {
+	@media screen and (max-width: 1025px) {
 		@content;
 	}
 }
 
 
-@mixin phones {
-	@media screen and (max-width: 480px) {
+@mixin smartphones {
+	@media screen and (max-width: 800px) {
+		@content;
+	}
+}
+
+@mixin mobilephones {
+	@media screen and (max-width: 320px) {
 		@content;
 	}
 }

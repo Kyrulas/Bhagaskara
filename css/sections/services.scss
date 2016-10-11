@@ -5,12 +5,18 @@
 	.container{
 		@extend %clearfix;
 	}
+	@include tablets{
+		padding-top: tablet(10px);
+	} 
 }
 .services__statistic{
 	@extend %clearfix;
 	width: rem(1022px);
-  margin: 0 auto;
-  margin-top: rem(20px);
+	margin: 0 auto;
+	margin-top: rem(20px);
+	@include smartphones{
+		width: phone(600px);	
+	} 
 }
 .services__statistic-value{
 	width: 25%;
@@ -54,6 +60,13 @@
 	.five:checked ~ .slider_labels > .s5_label{
 		background-color:#777777;
 	}
+	@include tablets{
+		margin-top: tablet(25px);
+		height: tablet(435px);
+	} 
+	@include smartphones{
+		margin-left: 0;	
+	} 
 }
 .services__boxes{
 	position:relative;
@@ -77,14 +90,24 @@
 	word-spacing: rem(5px);
 	label{
 		width: rem(9px);
-    height: rem(8px);
-    border: 1px solid;
-    border-radius:50%;
-    background-color:#fff;
-    display: inline-block;
-    margin-right: rem(9px);
-    cursor: pointer;
+		height: rem(8px);
+		border: 1px solid;
+		border-radius:50%;
+		background-color:#fff;
+		display: inline-block;
+		margin-right: rem(9px);
+		cursor: pointer;
+		@include smartphones{
+			width: phone(12px);
+			height: phone(12px);	
+		} 
 	}
+	@include tablets{
+		margin-top: tablet(0px);
+	} 
+	@include smartphones{
+		margin-top: phone(35px);	
+	} 
 }
 .services__slider_img{
 	width: rem(161px);
@@ -97,26 +120,33 @@
 	img{
 		display: block;
 		width: rem(228.06px);
-    height: rem(228.06px);
+		height: rem(228.06px);
 	}
+	@include smartphones{
+		width: phone(168px);	
+		height: phone(168px);
+	} 
 }
 .services__slider_info{
 	text-align: center;
 	margin-top: rem(33px);
 	h2{
-	font-family: 'helveticalight' ,sans-serif;
-	font-size: rem(31.01px);
-	color:#4b4b4b;
-	font-weight: 100;
-	line-height:rem(37px);
-	word-spacing: rem(1.4px)''
+		font-family: 'helveticalight' ,sans-serif;
+		font-size: rem(31.01px);
+		color:#4b4b4b;
+		font-weight: 100;
+		line-height:rem(37px);
+		word-spacing: rem(1.4px)''
 	}
 	p{
 
-	font-family: 'helveticabold', sans-serif;
-	font-size: rem(15px);
-	line-height: rem(37px);
-	color:#777777;
+		font-family: 'helveticabold', sans-serif;
+		font-size: rem(15px);
+		line-height: rem(37px);
+		color:#777777;
+		@include smartphones{
+			font-size: phone(16px);	
+		} 
 	}
 }
 
@@ -130,5 +160,8 @@
 	position: absolute;
 	left: 50%;
 	transform: translate(-50%);
-
+	@include tablets{
+		width: tablet(570px);
+		height: tablet(15px);
+	} 
 }

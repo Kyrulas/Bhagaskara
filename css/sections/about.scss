@@ -8,12 +8,24 @@
 	@include background-size(cover);
 	margin:0 auto;
 	margin-top: rem(121px);
+
+	@include tablets{
+		margin-top: tablet(10px);
+	} 
+	@include smartphones{
+		margin-top: (40px);	
+	} 
 }
 .about__desk{
 	margin-top: rem(130px);
 	@extend %clearfix;
 	margin-bottom: rem(221px);
 	box-sizing: border-box;
+
+	@include tablets{
+		margin-top: tablet(50px);
+		margin-bottom: 0;
+	} 
 }
 .about__desc-content{
 	float:right;
@@ -25,6 +37,17 @@
 	font-weight: 600;
 	box-sizing: border-box;
 	padding-left: rem(19px);
+
+	@include tablets{
+		width: tablet(405px);
+	} 
+	@include smartphones{
+		float: none;
+		width: phone(550px);	
+		margin: 0 auto;
+		font-size: phone(15px);
+		padding:0;
+	} 
 
 	button{
 		box-sizing:border-box;
@@ -38,6 +61,14 @@
 		color: #FFFFFF;
 		cursor: pointer;
 		outline: none;
+
+		@include tablets{
+			margin-top: tablet(70px);
+		}
+		@include smartphones{
+			display: block;
+			margin: 15px auto;	
+		}  
 
 		&:hover{
 			color: #6B2E68;
@@ -54,6 +85,17 @@
 	width: rem(624px);
 	height: rem(394.9555px);
 	@include background-size(cover);
+
+	@include tablets{
+		width: tablet(550px);
+		background-size: 100%;
+	} 
+	@include smartphones{
+		width: phone(464px);	
+		float: none;
+		display: block;
+		margin: 0 auto;
+	} 
 }
 //ABOUT FOOTER BLOCK
 .about__footer{
@@ -61,11 +103,13 @@
 	background: url(../img/section_bg.jpg)no-repeat;
 	background-size:cover;
 }
+
 .about__block,.think__block{
 	text-align:center;
 	padding: rem(145px) 0px rem(137px);
 	width: rem(700px);
 	margin: 0 auto;
+
 	p{
 		font-family: "latolight";
 		font-size: rem(45px);
@@ -76,14 +120,21 @@
 		letter-spacing: rem(1.3px);
 		line-height: rem(35px);
 	}
+	@include tablets{
+		padding: tablet(20px) tablet(20px);
+	} 
+
 }
 .think__block{
-	padding-bottom: rem(116.5px);
+	padding-bottom: rem(119px);
 	p {
 		line-height: rem(55px);
 		margin-top: rem(50px);
 		margin-bottom: rem(0px);
 	}
+	@include tablets{
+		padding-bottom: tablet(25px);
+	} 
 }
 .about-logo{
 	margin:0 auto;

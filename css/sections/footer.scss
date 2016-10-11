@@ -4,4 +4,7 @@
 	margin:rem(154px) 0 rem(115px) rem(424px);
 	background: url(../img/footer_logo.png) no-repeat;
 	@include background-size(cover);
+	@include tablets{
+		margin: tablet(30px) 0 tablet(20px) tablet(397px);
+	} 
 }

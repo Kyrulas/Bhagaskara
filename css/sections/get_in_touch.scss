@@ -3,124 +3,161 @@
  	.container{
  		@extend %clearfix;
  	}
+ 	@include tablets{
+ 		margin-top: tablet(30px);
+ 	} 
  }
  .get_in_touch_header{
-    background: url(../img/touch_header.png) no-repeat;
-    width: rem(351.2px);
-    height: rem(108.5px);
-    margin-left:rem(383px);
-    margin-bottom: rem(164px);
-    @include background-size(cover);
+ 	background: url(../img/touch_header.png) no-repeat;
+ 	width: rem(351.2px);
+ 	height: rem(108.5px);
+ 	margin-left:rem(383px);
+ 	margin-bottom: rem(164px);
+ 	@include background-size(cover);
+ 	@include tablets{
+ 		margin-bottom: tablet(30px);
+ 	} 
+ 	@include smartphones{
+ 		margin-top: phone(40px);	
+ 	} 
  }
  .get_in_touch__section{
  	@extend %clearfix;
- 	 margin-left: rem(27px);
+ 	margin-left: rem(27px);
  }
 
  .get_in_touch__form{
-	width: 50%;
-	float:left;
+ 	width: 50%;
+ 	float:left;
 
  	input[type="text"],textarea{
-	 	box-sizing:border-box;
-	 	width:rem(500px);
-    padding: rem(23px);
-    color: #5D5D5D;
-    border: rem(1px) solid #4E4E4E;
-    outline: none;
-    font-size: rem(18px);
-    margin-bottom: rem(36px);
-    display: block;
+ 		box-sizing:border-box;
+ 		width:rem(500px);
+ 		padding: rem(23px);
+ 		color: #5D5D5D;
+ 		border: rem(1px) solid #4E4E4E;
+ 		outline: none;
+ 		font-size: rem(18px);
+ 		margin-bottom: rem(36px);
+ 		display: block;
+ 		@include smartphones{
+ 			width: phone(600px);	
+ 			margin: 0 auto phone(25px);
+ 		} 
+ 	}
+ 	textarea{
+ 		min-height: rem(269px);
+ 		resize: none;
+ 	}
+ 	@include smartphones{
+ 		width: 100%;
+ 		float: none;	
+ 	} 
+ }
+ .form__send{
+ 	width: rem(215px);
+ 	margin-top: rem(-3px);
+ 	a{
+ 		box-sizing:border-box;
+ 		font-size: rem(20px);
+ 		display: block;
+ 		margin:0 auto;
+ 		padding: rem(21px) rem(54px);		
+ 		background: #9f449b;
+ 		border-bottom: solid rem(4px) #6B2E68;
+ 		border-radius: rem(7px);
+ 		text-align: center;
+ 		color: #FFFFFF;
 
-	}
-	textarea{
-	min-height: rem(269px);
-    resize: none;
-	}
-}
-.form__send{
-	width: rem(215px);
-	margin-top: rem(-3px);
-	a{
-	box-sizing:border-box;
-	font-size: rem(20px);
-	display: block;
-	margin:0 auto;
-	padding: rem(21px) rem(54px);		
-	background: #9f449b;
-    border-bottom: solid rem(4px) #6B2E68;
-    border-radius: rem(7px);
-    text-align: center;
-    color: #FFFFFF;
+ 		&:hover{
+ 			color: #6B2E68;
+ 			background: transparent;
+ 			border: solid rem(1px) #6B2E68;
+ 			border-top: solid rem(5px) #6B2E68;
+ 			border-radius: rem(10px);
+ 			
+ 		}
+ 	}
+ 	@include smartphones{
+ 		margin: 0 auto;	
+ 	} 
+ }
 
-    	&:hover{
-	    	color: #6B2E68;
-		    background: transparent;
-		    border: solid rem(1px) #6B2E68;
-		    border-top: solid rem(5px) #6B2E68;
-		    border-radius: rem(10px);
-		   
-	    	}
-	}
-}
+ .get_in_touch__info{
+ 	box-sizing:border-box;
+ 	width: 50%;
+ 	float:right;
+ 	padding-left:rem(40px);
 
-.get_in_touch__info{
-	box-sizing:border-box;
-	width: rem(532px);
-	float:right;
-	padding-left:rem(40px);
-
-	p{
-	font-family: 'helveticalight',sans-serif;
-	font-size: rem(21px);
-	line-height: rem(24px);
-	font-weight: 100;
-	margin:0;
-	color: rgb(75, 75, 75);
-	}
-	h4,a{
-	font-family: 'helveticabold', sans-serif;
-	font-size: rem(23.56px);
-	line-height: rem(37px);
-	color:#222222;
-	margin-top: rem(64px);
-	}
-	a{
-		display: block;
-		margin:0;
-		font-weight: bold;
-		    margin-right: rem(30px);
-	}
-}
-.get_in_touch-icons{
-	margin-top: rem(65px);
-	a{
-		display: inline-block;
-	}
-	span{
-		width: rem(74.5px);
-    height: rem(74.5px);
-    background: url(../img/get_in_touch_icons.png) no-repeat 0px 0px;
-    display: inline-block;
-    background-size: rem(299.6155px) rem(212.755px);
-	}
-	.get_in_touch-fb{
-	background-position: rem(-7.84px) rem(-9px);
-		&:hover{
-			background-position: rem(-7.84px) rem(-93px);
-		}
-	}
-	.get_in_touch-tw{
-	background-position: rem(-110.975px) rem(-8px);
-		&:hover{
-			background-position: rem(-112px) rem(-94.24px);
-		}
-	}
-	.get_in_touch-gl{
-		background-position: rem(-216.4px) rem(-9px);
-		&:hover{
-			background-position: rem(-215.92px) rem(-93.6px);
-		}
-	}
-}
+ 	p{
+ 		font-family: 'helveticalight',sans-serif;
+ 		font-size: rem(21px);
+ 		line-height: rem(24px);
+ 		font-weight: 100;
+ 		margin:0;
+ 		color: rgb(75, 75, 75);
+ 		@include smartphones{
+ 			font-size: phone(20px);
+ 			line-height: phone(24px);	
+ 		} 
+ 	}
+ 	h4,a{
+ 		font-family: 'helveticabold', sans-serif;
+ 		font-size: rem(23.56px);
+ 		line-height: rem(37px);
+ 		color:#222222;
+ 		margin-top: rem(64px);
+ 		@include smartphones{
+ 			margin-top: 0;	
+ 		} 
+ 	}
+ 	a{
+ 		display: block;
+ 		margin:0;
+ 		font-weight: bold;
+ 		margin-right: rem(30px);
+ 	}
+ 	@include smartphones{
+ 		width: phone(500px);	
+ 		float: none;
+ 		margin: phone(30px) auto;
+ 	} 
+ }
+ .get_in_touch-icons{
+ 	margin-top: rem(65px);
+ 	a{
+ 		display: inline-block;
+ 	}
+ 	span{
+ 		width: rem(74.5px);
+ 		height: rem(74.5px);
+ 		background: url(../img/get_in_touch_icons.png) no-repeat 0px 0px;
+ 		display: inline-block;
+ 		background-size: rem(299.6155px) rem(212.755px);
+ 	}
+ 	.get_in_touch-fb{
+ 		background-position: rem(-7.84px) rem(-9px);
+ 		&:hover{
+ 			background-position: rem(-7.84px) rem(-93px);
+ 		}
+ 	}
+ 	.get_in_touch-tw{
+ 		background-position: rem(-110.975px) rem(-8px);
+ 		&:hover{
+ 			background-position: rem(-112px) rem(-94.24px);
+ 		}
+ 	}
+ 	.get_in_touch-gl{
+ 		background-position: rem(-216.4px) rem(-9px);
+ 		&:hover{
+ 			background-position: rem(-215.92px) rem(-93.6px);
+ 		}
+ 	}
+ 	@include tablets{
+ 		margin-top: tablet(20px);
+ 	} 
+ 	@include smartphones{
+ 		text-align: center;
+ 	} 
+ }
 
