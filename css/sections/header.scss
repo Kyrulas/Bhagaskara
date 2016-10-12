@@ -45,6 +45,10 @@ html{
 	} 
 	@include smartphones{
 		width: phone(780px);	
+		position:relative;
+	} 
+	@include mobilephones{
+		width: mobile(460px);
 	} 
 }
 
@@ -64,14 +68,17 @@ html{
 	h2{
 		font-size:rem(48px);
 		line-height: 0.5;
+		@include mobilephones{
+			font-size: mobile(24px);
+		} 
 	}
 
 	p{
 		font-size:rem(24.2px);
 		line-height:rem(23px);
-		small{
-			display: block;
-		}
+		@include mobilephones{
+			font-size: mobile(20px);
+		} 
 	}
 	@include smartphones{
 		margin-top: 0;
@@ -85,6 +92,10 @@ html{
 	@include smartphones{
 		margin-top: 0;
 	} 
+	@include mobilephones{
+		display: inline-block;
+		width: 35%;
+	} 
 }
 .heptagon{
 	display: inline-block;
@@ -95,12 +106,17 @@ html{
 	cursor:pointer; 
 	@include background-size(cover);
 
+
 	&:hover{
 		background: url("../img/purple_bg.png") no-repeat;
 		width: rem(158.9339px);
 		height: rem(172.2577px);
 		@include background-size(cover);
 		@include transition(0.5s all);
+		@include mobilephones{
+			width: mobile(128px);
+			height: mobile(138px);
+		} 
 	}
 
 	.logo{
@@ -109,6 +125,11 @@ html{
 		margin-top: rem(35px);
 		z-index: 2;
 	}
+		@include mobilephones{
+			width: mobile(128px);
+			height: mobile(138px);
+		} 
+}
 
 //SERVICES LOGO
 .elem-top__left-logo__img{
@@ -162,7 +183,7 @@ label{
 	z-index: 2;
 	font-weight: bold;
 	margin-top: rem(26px);
-}
+
 
 }
 .header__block-left__about,.elem-top-left{
@@ -200,6 +221,10 @@ label{
 	@include smartphones{
 		margin-top: 0;
 	} 
+		@include mobilephones{
+			display: inline-block;
+			width: 60%;
+		} 
 }
 .elem-top__left-logo__img, .elem-top__right-logo__img{
 	margin-left:rem(15px);
@@ -229,7 +254,15 @@ label{
 			height: rem(89px);
 			@include background-size(cover);
 			@include transition(0.5s all);
+			@include mobilephones{
+			width: mobile(81px);
+			height: mobile(85px);
+		} 
 		}
+		@include mobilephones{
+			width: mobile(81px);
+			height: mobile(85px);
+		} 
 	}
 }
 

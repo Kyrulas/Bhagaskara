@@ -11,6 +11,10 @@
 	@include smartphones{
 		margin-top: phone(40px);	
 	} 
+	@include mobilephones{
+			width: mobile(257px);
+			height: mobile(98px);
+		} 
 }
 .skill_left{
 	width: rem(462px);
@@ -74,6 +78,9 @@
 	color:#777777;
 	margin:rem(0px);
 	margin-right: rem(4px);
+	@include mobilephones{
+			margin-right: mobile(42px);
+		} 
 }
 .score{
 
@@ -89,6 +96,11 @@
 	@include smartphones{
 		width: phone(600px);	
 	} 
+	@include mobilephones{
+			width: mobile(460px);
+			margin-left: 0;
+			
+		} 
 }
 .skill__score-web p{
 	width:90%;

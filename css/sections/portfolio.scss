@@ -15,6 +15,9 @@
 	@include smartphones{
 		margin: phone(40px) auto;	
 	} 
+	@include mobilephones{
+			width: mobile(302px);
+			height: mobile(93px);		} 
 }
 .portfolio__nav{
 	display: block;
@@ -50,6 +53,9 @@
 			@include smartphones{
 				padding: phone(10px) phone(30px);	
 			} 
+			@include mobilephones{
+			padding: mobile(19px) mobile(30px);
+		} 
 		}
 		input{
 			display: none;
@@ -70,6 +76,9 @@
 			display: block;
 			margin: phone(25px) auto;
 		} 
+		@include mobilephones{
+			width: mobile(460px);
+		} 
 	} 
 }
 .portfolio__works{
@@ -87,13 +96,12 @@
 	margin-bottom: rem(24px);
 	@include tablets{
 		margin-bottom: tablet(0px);
-		width: 50%;
-		float: left;
+		width: 100%;
 	} 
 }
 .portfolio__works_bottom{
 	@include smartphones{
-		width: 50%;
+		width: 100%;
 		float: right;	
 	} 
 }
@@ -125,10 +133,22 @@
 		width: auto;
 		border:0px;
 		height: rem(342.6px);
+		@include smartphones{
+		height: phone(260px);	
+		} 
+		@include mobilephones{
+			height: mobile(350px);
+		} 
 	}
 	@include smartphones{
 		margin: 0 auto;	
+		width: phone(260px);
+		height: phone(260px);
 	} 
+	@include mobilephones{
+			width: mobile(350px);
+			height: 350px;
+		} 
 }
 
 .portfolio__desc{
@@ -175,6 +195,10 @@
 		}
 		@include tablets{
 			margin: tablet(15px) 0 0 tablet(420px);
+		} 
+		@include mobilephones{
+			margin: 0 auto;
+			padding: mobile(22px) mobile(65px);
 		} 
 	}
 }

@@ -20,6 +20,11 @@
  	@include smartphones{
  		margin-top: phone(40px);	
  	} 
+ 	@include mobilephones{
+			width: mobile(320px);
+			height: mobile(98px);
+			margin: mobile(23px) auto;
+		} 
  }
  .get_in_touch__section{
  	@extend %clearfix;
@@ -44,6 +49,9 @@
  			width: phone(600px);	
  			margin: 0 auto phone(25px);
  		} 
+ 		@include mobilephones{
+			width: mobile(460px);
+		} 
  	}
  	textarea{
  		min-height: rem(269px);
@@ -77,10 +85,16 @@
  			border-radius: rem(10px);
  			
  		}
+ 		@include mobilephones{
+			padding:mobile(20px) mobile(30px);
+		} 
  	}
  	@include smartphones{
  		margin: 0 auto;	
  	} 
+ 	@include mobilephones{
+			width: mobile(200px);
+		} 
  }
 
  .get_in_touch__info{
@@ -122,6 +136,9 @@
  		float: none;
  		margin: phone(30px) auto;
  	} 
+ 	@include mobilephones{
+			width: mobile(460px);
+		} 
  }
  .get_in_touch-icons{
  	margin-top: rem(65px);

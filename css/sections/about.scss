@@ -48,6 +48,9 @@
 		font-size: phone(15px);
 		padding:0;
 	} 
+	@include mobilephones{
+			font-size: mobile(16px);
+		} 
 
 	button{
 		box-sizing:border-box;

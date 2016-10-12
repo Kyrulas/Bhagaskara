@@ -3,7 +3,7 @@
 	padding-top: rem(125px);
 	position: relative;
 	.container{
-		@extend %clearfix;
+	
 	}
 	@include tablets{
 		padding-top: tablet(10px);
@@ -17,6 +17,9 @@
 	@include smartphones{
 		width: phone(600px);	
 	} 
+	@include mobilephones{
+			width: mobile(480px);
+		} 
 }
 .services__statistic-value{
 	width: 25%;
@@ -67,12 +70,19 @@
 	@include smartphones{
 		margin-left: 0;	
 	} 
+	@include mobilephones{
+			height: mobile(430px);
+		} 
+
 }
 .services__boxes{
 	position:relative;
 	width:rem(884px);
 	height: rem(360px);
 	margin: 0 auto;
+	@include mobilephones{
+			width: mobile(480px);
+		} 
 }
 .services__slider-block{
 	position:absolute;
@@ -108,6 +118,9 @@
 	@include smartphones{
 		margin-top: phone(35px);	
 	} 
+	@include mobilephones{
+			margin-top: mobile(110px);
+		} 
 }
 .services__slider_img{
 	width: rem(161px);
@@ -121,11 +134,19 @@
 		display: block;
 		width: rem(228.06px);
 		height: rem(228.06px);
+		@include mobilephones{
+			width: mobile(190px);
+			height: mobile(190px);
+		} 
 	}
 	@include smartphones{
 		width: phone(168px);	
 		height: phone(168px);
 	} 
+	@include mobilephones{
+			width: mobile(190px);
+			height: mobile(190px);
+		} 
 }
 .services__slider_info{
 	text-align: center;

@@ -1,154 +1,69 @@
-html {
-  width: 100%;
-  height: 100%;
-  font-size: 16px;
-}
+/*
+Error: Undefined mixin 'desktop'.
+        on line 6 of header.scss, in `desktop'
+        from line 6 of header.scss
 
-.header {
-  display: block;
-  background: url("../img/background.jpg") no-repeat;
-  width: rem(2000px);
-  height: rem(1128px);
-  background-size: cover;
-}
+1: html{
+2: 	width: 100%;
+3: 	height:100%;
+4: 	font-size: 16px;
+5: 
+6: 	@include desktop{
+7: 		font-size: 15px;
+8: 	} 
+9: 	@include laptop{
+10: 		font-size: 13.2px;
+11: 	} 
 
-.container {
-  width: rem(1170px);
-  margin: 0 auto;
-  box-sizing: border-box;
-}
-
-.header__top {
-  text-align: center;
-  padding-top: rem(121px);
-}
-
-.header__text {
-  margin-top: rem(80px);
-  text-align: center;
-  font-family: "latohairline";
-  color: white;
-  font-weight: 300;
-}
-
-.header__text h2 {
-  font-size: rem(48px);
-  line-height: 0.5;
-}
-
-.header__text p {
-  font-size: rem(24px);
-}
-
-.header__text p small {
-  display: block;
-}
-
-.header__elem-top {
-  text-align: center;
-  margin: 0 auto;
-  margin-top: rem(112px);
-}
-
-.heptagon {
-  display: inline-block;
-  position: relative;
-  background: url("../img/border_white.png") no-repeat;
-  width: rem(170px);
-  height: rem(180px);
-  margin: 0 rem(10px);
-  cursor: pointer;
-}
-
-.heptagon:hover {
-  background: url("../img/purple_bg.png") no-repeat;
-}
-
-.heptagon .logo {
-  width: rem(67px);
-  height: rem(70px);
-  display: inline-block;
-  text-align: center;
-  margin-top: rem(42px);
-  z-index: 2;
-}
-
-.heptagon .elem-top__left-logo__img {
-  background: url(../img/services_icon.png) no-repeat 0px 0px;
-}
-
-.heptagon .elem-top__right-logo__img {
-  background: url(../img/portfolio_icon.png) no-repeat 0px 0px;
-}
-
-.heptagon .block-left__about-logo__img {
-  background: url(../img/about_icon.png) no-repeat 0px 0px;
-}
-
-.heptagon .block-left__team-logo__img {
-  background: url(../img/team_icon.png) no-repeat 0px 0px;
-}
-
-.heptagon .block-right__blog-logo__img {
-  background: url(../img/blog_icon.png) no-repeat 0px 0px;
-}
-
-.heptagon .block-right__contact-logo__img {
-  background: url(../img/contact_icon.png) no-repeat 0px 0px;
-}
-
-.heptagon label {
-  display: block;
-  font-family: 'latoregular';
-  font-size: rem(18px);
-  text-align: center;
-  color: white;
-  z-index: 2;
-}
-
-.header__elem-bottom {
-  width: 100%;
-  margin-top: rem(30px);
-}
-
-.header__elem-bottom .header__block-left {
-  float: left;
-  width: 50%;
-}
-
-.header__elem-bottom .header_block-right {
-  float: right;
-  width: 50%;
-  text-align: right;
-}
-
-.elem-top__left-logo__img, .elem-top__right-logo__img {
-  margin-left: rem(15px);
-}
-
-.block-right__contact-logo__img, .block-right__blog-logo__img {
-  margin-right: rem(50px);
-}
-
-.block-left__team-logo__img, .block-left__about-logo__img {
-  margin-left: rem(55px);
-}
-
-.header__arrow-elem {
-  text-align: center;
-}
-
-.header__arrow-elem a {
-  display: block;
-  margin: 0 auto;
-  margin-bottom: rem(30px);
-  width: rem(120px);
-  height: rem(120px);
-  background: url(../img/arrow_down.png) no-repeat 0px 0px;
-}
-
-.header__arrow-elem a:hover {
-  background: url(../img/arrow_down_hover.png) no-repeat 0px 0px;
-}
-
-/*# sourceMappingURL=header.css.map */
+Backtrace:
+header.scss:6:in `desktop'
+header.scss:6
+C:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.20/lib/sass/tree/visitors/perform.rb:349:in `block in visit_mixin'
+C:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.20/lib/sass/stack.rb:98:in `block in with_mixin'
+C:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.20/lib/sass/stack.rb:115:in `with_frame'
+C:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.20/lib/sass/stack.rb:98:in `with_mixin'
+C:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.20/lib/sass/tree/visitors/perform.rb:347:in `visit_mixin'
+C:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.20/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.20/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+C:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.20/lib/sass/stack.rb:79:in `block in with_base'
+C:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.20/lib/sass/stack.rb:115:in `with_frame'
+C:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.20/lib/sass/stack.rb:79:in `with_base'
+C:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.20/lib/sass/tree/visitors/perform.rb:158:in `visit'
+C:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.20/lib/sass/tree/visitors/perform.rb:431:in `block (2 levels) in visit_rule'
+C:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.20/lib/sass/tree/visitors/perform.rb:431:in `map'
+C:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.20/lib/sass/tree/visitors/perform.rb:431:in `block in visit_rule'
+C:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.20/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+C:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.20/lib/sass/tree/visitors/perform.rb:429:in `visit_rule'
+C:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.20/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.20/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+C:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.20/lib/sass/stack.rb:79:in `block in with_base'
+C:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.20/lib/sass/stack.rb:115:in `with_frame'
+C:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.20/lib/sass/stack.rb:79:in `with_base'
+C:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.20/lib/sass/tree/visitors/perform.rb:158:in `visit'
+C:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.20/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+C:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.20/lib/sass/tree/visitors/base.rb:52:in `map'
+C:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.20/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+C:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.20/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
+C:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.20/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+C:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.20/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
+C:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.20/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+C:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.20/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
+C:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.20/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.20/lib/sass/tree/visitors/perform.rb:157:in `visit'
+C:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.20/lib/sass/tree/visitors/perform.rb:8:in `visit'
+C:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.20/lib/sass/tree/root_node.rb:36:in `css_tree'
+C:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.20/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+C:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.20/lib/sass/engine.rb:378:in `_render_with_sourcemap'
+C:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.20/lib/sass/engine.rb:295:in `render_with_sourcemap'
+C:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.20/lib/sass/exec/sass_scss.rb:412:in `run'
+C:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.20/lib/sass/exec/sass_scss.rb:63:in `process_result'
+C:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.20/lib/sass/exec/base.rb:52:in `parse'
+C:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.20/lib/sass/exec/base.rb:19:in `parse!'
+C:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.20/bin/sass:13:in `<top (required)>'
+C:/Program Files (x86)/Prepros/resources/app/ruby/loader.rb:15:in `load'
+C:/Program Files (x86)/Prepros/resources/app/ruby/loader.rb:15:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Undefined mixin 'desktop'.\A         on line 6 of header.scss, in `desktop'\A         from line 6 of header.scss\A \A 1: html{\A 2: 	width: 100%;\A 3: 	height:100%;\A 4: 	font-size: 16px;\A 5: \A 6: 	@include desktop{\A 7: 		font-size: 15px;\A 8: 	} \A 9: 	@include laptop{\A 10: 		font-size: 13.2px;\A 11: 	} "; }

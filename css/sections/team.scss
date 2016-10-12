@@ -7,6 +7,10 @@
 	@include smartphones{
 		margin-top: phone(40px);	
 	} 
+	@include mobilephones{
+			width: mobile(267px);
+			height: mobile(98px);
+		} 
 }
 .team{
 	margin-top: rem(144px);
@@ -38,9 +42,15 @@
 	cursor:pointer;
 	&:hover{
 		background: url(../img/arrow_right_hover.png) no-repeat;
-		@include background-size(cover);
-		
+		@include background-size(cover);	
 	}
+		@include smartphones{
+		width: phone(65px);	
+		height: phone(70px);
+		position: absolute;
+		right: 0;
+		bottom: phone(500px);	
+	} 
 }
 .team__arrows-prev{
 	background: url(../img/arrow_left.png) no-repeat;
@@ -49,6 +59,13 @@
 		background: url(../img/arrow_left_hover.png) no-repeat;
 		@include background-size(cover);
 	}
+	@include smartphones{
+		width: phone(64px);	
+		height: phone(70px);
+		position: absolute;
+		left: 0;
+		bottom: phone(500px);
+	} 
 }
 
 
@@ -61,6 +78,9 @@
 		margin-top:tablet(50px);
 		width: tablet(960px);
 	} 
+	@include mobilephones{
+			width: mobile(460px);
+		} 
 }
 .team__container__second_row{
 	display:none;
@@ -70,14 +90,23 @@
 	width: 30%;
 	display: inline-block;
 	text-align: center;
+	@include smartphones{
+		width:100%;	
+	} 
 	&:nth-child(2){
 		width: 40%;
+		@include smartphones{
+		width: 100%;	
+		} 
 	}
 	h2{
 		font-family: 'latobold';
 		font-size: rem(22.3998px);
 		color:#484848;
 		line-height: rem(24.84px);
+		@include smartphones{
+		font-size: phone(18px);	
+	} 
 	}
 	p{
 		font-family: 'latoregular';
@@ -88,6 +117,9 @@
 		@include tablets{
 			margin:0;
 		} 
+		@include smartphones{
+		font-size:phone(15px);	
+		} 
 	}
 	a{
 		margin: rem(11.66px);
@@ -97,6 +129,10 @@
 			width: rem(44px);
 			height: rem(44px);
 			@include background-size(cover);
+			@include smartphones{
+			width: phone(40px);	
+			height: phone(40px);
+			} 
 		}
 		
 	}
@@ -110,6 +146,10 @@
 	overflow: hidden;
 	border-radius: 50%;
 	margin: 0 auto;
+	@include smartphones{
+		width:phone(250px);
+		height: phone(250px);	
+	} 
 }
 .team__img img{
 	display: block;

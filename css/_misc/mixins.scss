@@ -40,6 +40,9 @@
 @function phone($px) {
 	@return $px / 12px + 0rem;
 }
+@function mobile($px) {
+	@return $px / 10px + 0rem;
+}
 
 
 @mixin desktop {
@@ -69,7 +72,7 @@
 }
 
 @mixin mobilephones {
-	@media screen and (max-width: 320px) {
+	@media screen and (max-width: 600px) {
 		@content;
 	}
 }

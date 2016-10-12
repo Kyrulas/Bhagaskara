@@ -25,6 +25,10 @@
 		width: phone(360px);
 		margin: 0 phone(10px);
 	} 
+	@include mobilephones{
+		width: mobile(460px);
+			
+		} 
 	h2{
 		font-size:rem(24px);
 		margin-top: rem(34px);
@@ -32,12 +36,19 @@
 			font-size: phone(24px);	
 			margin: 0;
 		} 
+		@include mobilephones{
+			font-size: mobile(28px);
+			margin-top: mobile(30px);
+		} 
 	}
 	p{
 		font-size: rem(16px);
 		margin-top: rem(27px);
 		@include smartphones{
 			font-size: phone(14px);	
+		} 
+		@include mobilephones{
+			font-size: mobile(18px);
 		} 
 	}
 }
@@ -50,24 +61,40 @@
 	width:rem(163.69px);
 	height:rem(177.02px);
 	@include background-size(cover);
+	@include mobilephones{
+			width: mobile(162px);
+			height: mobile(173px);
+		} 
 }
 .feature__modern__logo{
 	background: url(../img/modern_logo.png)no-repeat;
 	width:rem(163.69px);
 	height:rem(177.02px);
 	@include background-size(cover);
+	@include mobilephones{
+			width: mobile(162px);
+			height: mobile(173px);
+		} 
 }
 .feature__use__logo{
 	background: url(../img/use_logo.png)no-repeat;
 	width:rem(163.69px);
 	height:rem(177.02px);
 	@include background-size(cover);
+	@include mobilephones{
+			width: mobile(162px);
+			height: mobile(173px);
+		} 
 }
 .feature__responsive__logo{
 	background: url(../img/responsive_logo.png)no-repeat;
 	width:rem(163.69px);
 	height:rem(177.02px);
 	@include background-size(cover);
+	@include mobilephones{
+			width: mobile(162px);
+			height: mobile(173px);
+		} 
 }
 
 
@@ -77,6 +104,10 @@
 		width:rem(163.69px);
 		height:rem(177.02px);
 		@include background-size(cover);
+		@include mobilephones{
+			width: mobile(162px);
+			height: mobile(173px);
+		} 
 	}	
 }
 .feature__modern:hover{
@@ -85,6 +116,10 @@
 		width:rem(163.69px);
 		height:rem(177.02px);
 		@include background-size(cover);
+		@include mobilephones{
+			width: mobile(162px);
+			height: mobile(173px);
+		} 
 	}
 }
 
@@ -94,6 +129,10 @@
 		width:rem(163.69px);
 		height:rem(177.02px);
 		@include background-size(cover);
+		@include mobilephones{
+			width: mobile(162px);
+			height: mobile(173px);
+		} 
 	}
 }
 .feature__responsive:hover{
@@ -102,5 +141,9 @@
 		width:rem(163.69px);
 		height:rem(177.02px);
 		@include background-size(cover);
+		@include mobilephones{
+			width: mobile(162px);
+			height: mobile(173px);
+		} 
 	}
 }

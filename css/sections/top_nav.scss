@@ -12,6 +12,11 @@
 	@include smartphones{
 		width: phone(700px);	
 	} 
+	@include mobilephones{
+		font-size: mobile(14px);
+		width: mobile(542px);
+		position: relative;
+	} 
 }
 .nav-top__logo{
 	float:left;
@@ -24,18 +29,23 @@
 	@include tablets{
 		margin:tablet(15px) tablet(0px) tablet(10px);
 	} 
+	@include mobilephones{
+		width: mobile(135px);
+		height: mobile(32px);
+		float: left;
+	} 
 }
 .nav-top__list{
 	float:right;
 	margin-top:rem(65px);
-
-	@include tablets{
-		margin-top: tablet(25px);
-	} 
 	li{
 		display: inline-block;
 		text-decoration: none;
 		padding-left:rem(23px);
+		@include mobilephones{
+			padding-left: mobile(2px);
+			display: none;
+		} 
 
 		a{
 			color: rgb(103, 103, 103);
@@ -46,5 +56,46 @@
 			}
 		}
 	}
+	.menu_icon{
+		display:none;
+		@include mobilephones{
+			float: right;
+			display: inline-block;
+			font-size: mobile(25px);
+		} 
+	}
+	&.responsive{
+		width: 100px;
+		float: left;
+
+		 li{
+		 	float: none;
+		 	display: block;
+		 	font-size: mobile(25px);
+		 	line-height: mobile(50px);
+		 	&:not(:last-child){
+		 		width: mobile(160px);
+		 		text-align: center;
+		 	}
+		 	a{
+		 		display: block;
+		 		display: inline;
+		 	}
+		 }
+		 .menu_icon{
+		 		position:absolute;
+		 		right: 0px;
+		 		top: phone(10px);
+		 	}
+	}
+	@include tablets{
+		margin-top: tablet(25px);
+	} 
+	@include mobilephones{
+		padding-left: mobile(2px);
+		margin-left: mobile(60px);
+	} 
+
 }
+
 
