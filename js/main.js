@@ -1,6 +1,7 @@
 $(document).ready(function() {
 	$(window).resize(resizeWindow);
 	resizeWindow();
+	$(window).scroll(fixMenu);
 });
 
 
@@ -13,9 +14,20 @@ var resizeWindow = function(){
 		$("html").css('font-size',htmlWidth/73.214);
 	}else if(htmlWidth > 580){
 		$("html").css('font-size',htmlWidth/66.67);
+	}else{
+		$("html").css('font-size',htmlWidth/60);
 	}
 };
-
+//fix nav top
+var fixMenu = function(){
+	var nav = $('.nav-top');
+	var font_size = parseInt($("html").css("font-size"));
+	if($(this).scrollTop() > (65.625 * font_size)){
+		nav.addClass("nav-fix");
+	}else{
+		nav.removeClass('nav-fix');
+	}
+} 
 //menu responsive toggle
 function menuToggle(){
 	var menu = $(".nav-top__list");

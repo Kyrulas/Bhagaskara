@@ -18,6 +18,49 @@
 		position: relative;
 	} 
 }
+.nav-fix{
+	z-index:999;
+	position: fixed;
+	width:100%;
+	top:0;
+	background-color: white;
+	text-align: center;
+		.nav-top__logo{
+			float: none;
+			margin: rem(15px) 0;
+			display: inline-block;
+		}
+		.nav-top__list{
+			float:none;
+			display: inline-block;
+			vertical-align: top;
+			@include mobilephones{
+				float: right;
+				margin: mobile(4px) 0;
+			} 
+			&.responsive {
+				.menu_icon{
+					position: absolute;
+					right: mobile(19px);
+					top: mobile(9px);
+					margin: 0;
+				}
+				li{
+					margin: 0 auto;
+				}
+				@include mobilephones{
+					width: 100%;
+					margin-top: 0px 
+				}
+			}
+		}
+		@include mobilephones{
+			text-align: initial;
+			margin: 0;
+			padding:0px mobile(20px);
+			box-sizing:border-box;
+		} 
+}
 .nav-top__logo{
 	float:left;
 	margin:rem(54px) rem(0px) rem(45px);
@@ -30,9 +73,10 @@
 		margin:tablet(15px) tablet(0px) tablet(10px);
 	} 
 	@include mobilephones{
-		width: mobile(135px);
-		height: mobile(32px);
+		width: mobile(205px);
+		height: mobile(48px);
 		float: left;
+		margin-top: mobile(20px);
 	} 
 }
 .nav-top__list{
@@ -63,11 +107,16 @@
 			display: inline-block;
 			font-size: mobile(25px);
 		} 
+			a{
+				@include mobilephones{
+					font-size: mobile(40px);
+				} 
+			}
 	}
 	&.responsive{
-		width: 100px;
+		width: mobile(487.766px);
 		float: left;
-
+		margin-top:0;
 		 li{
 		 	float: none;
 		 	display: block;
@@ -76,6 +125,7 @@
 		 	&:not(:last-child){
 		 		width: mobile(160px);
 		 		text-align: center;
+		 		margin: 0 auto;
 		 	}
 		 	a{
 		 		display: block;
@@ -85,7 +135,8 @@
 		 .menu_icon{
 		 		position:absolute;
 		 		right: 0px;
-		 		top: phone(10px);
+		 		top: 0px;
+		 		margin-top: mobile(20.5px);
 		 	}
 	}
 	@include tablets{
