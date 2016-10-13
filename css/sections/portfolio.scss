@@ -91,19 +91,7 @@
 		padding:0 phone(80px);	
 	} 
 }
-.portfolio__works_top{
-	margin-bottom: rem(24px);
-	@include tablets{
-		margin-bottom: tablet(0px);
-		width: 100%;
-	} 
-}
-.portfolio__works_bottom{
-	@include smartphones{
-		width: 100%;
-		float: right;	
-	} 
-}
+
 .portfolio__works-block{
 	display: inline-block;
 	text-align: center;

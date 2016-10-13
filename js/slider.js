@@ -16,7 +16,7 @@ $( document ).ready(function() {
 			currentIndex = 0;
 		}
 		cycleItems();
-		},);
+		},3000);
 
 	$('.team__arrows-next').click(function(){
 		clearInterval(autoslide);
