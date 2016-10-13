@@ -69,6 +69,7 @@
 	} 
 	@include smartphones{
 		margin-left: 0;	
+    margin-bottom: phone(42px);
 	} 
 	@include mobilephones{
 			height: mobile(430px);
@@ -176,13 +177,15 @@
 .services__bottom{
 	background-color:#FFFFFF;;
 	height: rem(50px);
-	width: rem(1218.18px);
+	width: 64.01%;
 	bottom: 0;
 	position: absolute;
 	left: 50%;
 	transform: translate(-50%);
 	@include tablets{
-		width: tablet(570px);
+		//width: tablet(570px);
 		height: tablet(15px);
 	} 
+
+	 border-bottom: phone(1px) solid white;
 }

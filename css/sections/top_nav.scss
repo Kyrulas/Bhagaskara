@@ -126,6 +126,9 @@
 		 		width: mobile(160px);
 		 		text-align: center;
 		 		margin: 0 auto;
+		 		@include mobilephones{
+		 			line-height: mobile(36px);
+				} 
 		 	}
 		 	a{
 		 		display: block;

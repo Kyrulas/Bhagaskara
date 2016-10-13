@@ -2,10 +2,12 @@ $(document).ready(function() {
 	$(window).resize(resizeWindow);
 	resizeWindow();
 	$(window).scroll(fixMenu);
+	fixMenu();
 });
 
 
 var resizeWindow = function(){
+	$('.nav-top__list').removeClass('responsive');
 	var htmlWidth = parseInt($("html").width());
 	$("html").css("font-size", "");
 	if(htmlWidth > 1025){
@@ -20,6 +22,7 @@ var resizeWindow = function(){
 };
 //fix nav top
 var fixMenu = function(){
+	$('.nav-top__list').removeClass('responsive');
 	var nav = $('.nav-top');
 	var font_size = parseInt($("html").css("font-size"));
 	if($(this).scrollTop() > (65.625 * font_size)){
